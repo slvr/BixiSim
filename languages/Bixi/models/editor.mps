@@ -24,9 +24,25 @@
     <ref role="1XX52x" to="6gk1:3bM35NuJuE6" resolve="Neighbourhood" />
     <node concept="3EYTF0" id="3bM35NuJuEA" role="2wV5jI" />
   </node>
-  <node concept="24kQdi" id="3bM35NuJvLg">
-    <ref role="1XX52x" to="6gk1:3bM35NuJvJs" resolve="Customer" />
-    <node concept="3EYTF0" id="3bM35NuJvLh" role="2wV5jI" />
+  <node concept="24kQdi" id="3pzYxVetFL0">
+    <ref role="1XX52x" to="6gk1:3bM35NuJvHh" resolve="BikeRack" />
+    <node concept="3EYTF0" id="3pzYxVetFL1" role="2wV5jI" />
+  </node>
+  <node concept="24kQdi" id="3pzYxVetFLa">
+    <ref role="1XX52x" to="6gk1:3pzYxVetFJh" resolve="RandomMovement" />
+    <node concept="3EYTF0" id="3pzYxVetFLb" role="2wV5jI" />
+  </node>
+  <node concept="24kQdi" id="3pzYxVetFLk">
+    <ref role="1XX52x" to="6gk1:3pzYxVetFJi" resolve="Redistribution" />
+    <node concept="3EYTF0" id="3pzYxVetFLl" role="2wV5jI" />
+  </node>
+  <node concept="24kQdi" id="3pzYxVetFLu">
+    <ref role="1XX52x" to="6gk1:3bM35NuJuFV" resolve="Street" />
+    <node concept="3EYTF0" id="3pzYxVetFLv" role="2wV5jI" />
+  </node>
+  <node concept="24kQdi" id="3pzYxVetFN4">
+    <ref role="1XX52x" to="6gk1:3pzYxVetFMx" resolve="MemberMovement" />
+    <node concept="3EYTF0" id="3pzYxVetFN5" role="2wV5jI" />
   </node>
 </model>
 

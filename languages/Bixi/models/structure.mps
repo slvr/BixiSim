@@ -68,6 +68,13 @@
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="3bM35NuJuFV" resolve="Street" />
     </node>
+    <node concept="1TJgyj" id="3pzYxVetFJm" role="1TKVEi">
+      <property role="IQ2ns" value="3919251110962314198" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="racks" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3bM35NuJvHh" resolve="BikeRack" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3bM35NuJuFV">
     <property role="EcuMT" value="3671010239273888507" />
@@ -96,13 +103,6 @@
       <property role="TrG5h" value="placement" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyj" id="3bM35NuJvIx" role="1TKVEi">
-      <property role="IQ2ns" value="3671010239273892769" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="racks" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3bM35NuJvHh" resolve="BikeRack" />
-    </node>
   </node>
   <node concept="AxPO7" id="3bM35NuJuG4">
     <property role="TrG5h" value="StreetOrientation" />
@@ -124,18 +124,35 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3bM35NuJvHi" role="1TKVEl">
       <property role="IQ2nx" value="3671010239273892690" />
-      <property role="TrG5h" value="number" />
+      <property role="TrG5h" value="numberofBikes" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="3bM35NuJvHm" role="1TKVEl">
       <property role="IQ2nx" value="3671010239273892694" />
-      <property role="TrG5h" value="limit" />
+      <property role="TrG5h" value="upperLimit" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
     <node concept="1TJgyi" id="3bM35NuJvHt" role="1TKVEl">
       <property role="IQ2nx" value="3671010239273892701" />
       <property role="TrG5h" value="quadrant" />
       <ref role="AX2Wp" node="3bM35NuJvHB" resolve="Quadrant" />
+    </node>
+    <node concept="PrWs8" id="3pzYxVetFJj" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="3pzYxVetFJE" role="1TKVEi">
+      <property role="IQ2ns" value="3919251110962314218" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="streetH" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3bM35NuJuFV" resolve="Street" />
+    </node>
+    <node concept="1TJgyj" id="3pzYxVetFJH" role="1TKVEi">
+      <property role="IQ2ns" value="3919251110962314221" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="StreetV" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3bM35NuJuFV" resolve="Street" />
     </node>
   </node>
   <node concept="AxPO7" id="3bM35NuJvHB">
@@ -160,66 +177,138 @@
       <property role="1uS6qv" value="4" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3bM35NuJvJq">
-    <property role="EcuMT" value="3671010239273892826" />
-    <property role="TrG5h" value="Bike" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="3bM35NuJvJr">
-    <property role="EcuMT" value="3671010239273892827" />
-    <property role="TrG5h" value="Rental" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-  </node>
-  <node concept="1TIwiD" id="3bM35NuJvJs">
-    <property role="EcuMT" value="3671010239273892828" />
-    <property role="TrG5h" value="Customer" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="3bM35NuJvL1" role="1TKVEl">
-      <property role="IQ2nx" value="3671010239273892929" />
-      <property role="TrG5h" value="plan" />
-      <ref role="AX2Wp" node="3bM35NuJvKI" resolve="PlanType" />
-    </node>
-    <node concept="1TJgyi" id="3bM35NuJvKR" role="1TKVEl">
-      <property role="IQ2nx" value="3671010239273892919" />
-      <property role="TrG5h" value="number" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="3bM35NuJvKI">
-    <property role="TrG5h" value="PlanType" />
+  <node concept="AxPO7" id="3pzYxVetFIy">
+    <property role="TrG5h" value="TimeSlot" />
     <property role="PDuV0" value="true" />
     <property role="3lZH7k" value="derive_from_internal_value" />
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="3bM35NuJvKJ" role="M5hS2">
-      <property role="1uS6qv" value="ShortTerm" />
-      <property role="1uS6qo" value="short" />
+    <node concept="M4N5e" id="3pzYxVetFIz" role="M5hS2">
+      <property role="1uS6qv" value="0-4" />
+      <property role="1uS6qo" value="Night" />
     </node>
-    <node concept="M4N5e" id="3bM35NuJvKK" role="M5hS2">
-      <property role="1uS6qv" value="LongTerm" />
-      <property role="1uS6qo" value="long" />
+    <node concept="M4N5e" id="3pzYxVetFI$" role="M5hS2">
+      <property role="1uS6qv" value="4-8" />
+      <property role="1uS6qo" value="Early Morning" />
+    </node>
+    <node concept="M4N5e" id="3pzYxVetFID" role="M5hS2">
+      <property role="1uS6qv" value="8-12" />
+      <property role="1uS6qo" value="Morning" />
+    </node>
+    <node concept="M4N5e" id="3pzYxVetFIK" role="M5hS2">
+      <property role="1uS6qv" value="12-16" />
+      <property role="1uS6qo" value="Midday" />
+    </node>
+    <node concept="M4N5e" id="3pzYxVetFIT" role="M5hS2">
+      <property role="1uS6qv" value="16-20" />
+      <property role="1uS6qo" value="Afternoon" />
+    </node>
+    <node concept="M4N5e" id="3pzYxVetFJ4" role="M5hS2">
+      <property role="1uS6qo" value="Evening" />
+      <property role="1uS6qv" value="20-0" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3bM35NuJvLi">
-    <property role="EcuMT" value="3671010239273892946" />
-    <property role="TrG5h" value="City" />
+  <node concept="1TIwiD" id="3pzYxVetFJh">
+    <property role="EcuMT" value="3919251110962314193" />
+    <property role="TrG5h" value="RandomMovement" />
+    <ref role="1TJDcQ" node="3pzYxVetFWN" resolve="Movement" />
+  </node>
+  <node concept="1TIwiD" id="3pzYxVetFJi">
+    <property role="EcuMT" value="3919251110962314194" />
+    <property role="TrG5h" value="Redistribution" />
+    <ref role="1TJDcQ" node="3pzYxVetFWN" resolve="Movement" />
+  </node>
+  <node concept="AxPO7" id="3pzYxVetFJM">
+    <property role="TrG5h" value="WeekDay" />
+    <property role="PDuV0" value="true" />
+    <property role="3lZH7k" value="derive_from_internal_value" />
+    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="M4N5e" id="3pzYxVetFJN" role="M5hS2">
+      <property role="1uS6qv" value="Monday" />
+      <property role="1uS6qo" value="Monday" />
+    </node>
+    <node concept="M4N5e" id="3pzYxVetFJO" role="M5hS2">
+      <property role="1uS6qv" value="Tuesday" />
+      <property role="1uS6qo" value="Tuesday" />
+    </node>
+    <node concept="M4N5e" id="3pzYxVetFJT" role="M5hS2">
+      <property role="1uS6qv" value="Wednesday" />
+      <property role="1uS6qo" value="Wednesday" />
+    </node>
+    <node concept="M4N5e" id="3pzYxVetFK0" role="M5hS2">
+      <property role="1uS6qv" value="Thursday" />
+      <property role="1uS6qo" value="Thursday" />
+    </node>
+    <node concept="M4N5e" id="3pzYxVetFK9" role="M5hS2">
+      <property role="1uS6qv" value="Friday" />
+      <property role="1uS6qo" value="Friday" />
+    </node>
+    <node concept="M4N5e" id="3pzYxVetFKk" role="M5hS2">
+      <property role="1uS6qv" value="Saturday" />
+      <property role="1uS6qo" value="Saturday" />
+    </node>
+    <node concept="M4N5e" id="3pzYxVetFKx" role="M5hS2">
+      <property role="1uS6qv" value="Sunday" />
+      <property role="1uS6qo" value="Sunday" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3pzYxVetFMs">
+    <property role="EcuMT" value="3919251110962314396" />
+    <property role="TrG5h" value="Member" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="3bM35NuJvLj" role="1TKVEl">
-      <property role="IQ2nx" value="3671010239273892947" />
-      <property role="TrG5h" value="rows" />
+    <node concept="PrWs8" id="3pzYxVetFMt" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="3pzYxVetFXX" role="1TKVEl">
+      <property role="IQ2nx" value="3919251110962315133" />
+      <property role="TrG5h" value="ID" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="3bM35NuJvLn" role="1TKVEl">
-      <property role="IQ2nx" value="3671010239273892951" />
-      <property role="TrG5h" value="columns" />
+  </node>
+  <node concept="1TIwiD" id="3pzYxVetFMx">
+    <property role="EcuMT" value="3919251110962314401" />
+    <property role="TrG5h" value="MemberMovement" />
+    <ref role="1TJDcQ" node="3pzYxVetFWN" resolve="Movement" />
+    <node concept="1TJgyj" id="3pzYxVetFWp" role="1TKVEi">
+      <property role="IQ2ns" value="3919251110962315033" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="member" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3pzYxVetFMs" resolve="Member" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3pzYxVetFWN">
+    <property role="EcuMT" value="3919251110962315059" />
+    <property role="TrG5h" value="Movement" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3pzYxVetFXd" role="1TKVEl">
+      <property role="IQ2nx" value="3919251110962315085" />
+      <property role="TrG5h" value="dayOfWeek" />
+      <ref role="AX2Wp" node="3pzYxVetFJM" resolve="WeekDay" />
+    </node>
+    <node concept="1TJgyi" id="3pzYxVetFXg" role="1TKVEl">
+      <property role="IQ2nx" value="3919251110962315088" />
+      <property role="TrG5h" value="timeSlot" />
+      <ref role="AX2Wp" node="3pzYxVetFIy" resolve="TimeSlot" />
+    </node>
+    <node concept="1TJgyi" id="3pzYxVetFXl" role="1TKVEl">
+      <property role="IQ2nx" value="3919251110962315093" />
+      <property role="TrG5h" value="numberOfBikes" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyj" id="3bM35NuJvLu" role="1TKVEi">
-      <property role="IQ2ns" value="3671010239273892958" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="neighbourhoods" />
-      <property role="20lbJX" value="1..n" />
-      <ref role="20lvS9" node="3bM35NuJuE6" resolve="Neighbourhood" />
+    <node concept="1TJgyj" id="3pzYxVetFXs" role="1TKVEi">
+      <property role="IQ2ns" value="3919251110962315100" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="sourceRack" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3bM35NuJvHh" resolve="BikeRack" />
+    </node>
+    <node concept="1TJgyj" id="3pzYxVetFXv" role="1TKVEi">
+      <property role="IQ2ns" value="3919251110962315103" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="targetRack" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="3bM35NuJvHh" resolve="BikeRack" />
     </node>
   </node>
 </model>

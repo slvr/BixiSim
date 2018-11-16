@@ -1,0 +1,38 @@
+Neighbourhood
+Street
+	StreetOrientation
+BikeRack
+	Bike
+Day
+	WeekDay
+	WeekEndDay
+TimeSlot
+	0, 4, 8, 12, 16, 20
+Movement
+Member
+
+Neighbouhood Hochelaga{
+	{
+	Street St-Denis (10, 20, 30, Vertical)
+	...
+	}
+
+	{
+	BikeRack StDenisMaisonneuve (2, 10, StD, Mais, 2)
+	}
+}
+
+Redistribute (Monday, 12-4)
+
+Movement (Monday, 12-4, BRA, BRC, 3);
+MemberMovement (Monday, 12-4, BRA, BRC, 1);
+
+Movement(BRA, BRB){
+	Int[42]{3, 2, 4, 5, 9, ...}
+}
+
+Constraints:
+BikeRack must be on a corner of 2 intersecting streets
+Streets must not be on edge of neighbourhood
+MemberMovement must have expectedMovement property == 1
+Member Id must be unique
