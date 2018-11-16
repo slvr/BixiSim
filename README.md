@@ -9,4 +9,4 @@ This project tasks to create a domain-specific language specifying Montreal's BI
 This language was created using the JetBrains MPS projectional editor, with the specific goal of defining 
 1. The language's abstract syntax via the underlying tree behind the editor;
 2. The language's concrete syntax via the incorporated _editor_ modules;
-3. *[SEMANTICS OR TRANSFORMATION]*.
+3. The language's semantics definition.
