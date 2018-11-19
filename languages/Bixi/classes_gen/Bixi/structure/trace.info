@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1076505808687:jetbrains.mps.baseLanguage.structure.WhileStatement" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,110,0" name="Bixi.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,48,0" name="Bixi.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="14,0,180,0" name="Bixi.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3671010239273888390">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3671010239273888390" at="18,0,19,0" concept="2" trace="props_Neighbourhood" />
+      <node id="3671010239273888390" at="72,42,73,76" concept="5" />
+      <node id="3671010239273888390" at="73,76,74,77" concept="1" />
+      <node id="3671010239273888390" at="74,77,75,35" concept="1" />
+      <node id="3671010239273888390" at="75,35,76,45" concept="1" />
+      <node id="3671010239273888390" at="77,9,78,35" concept="6" />
+      <node id="3671010239273888390" at="71,47,77,9" concept="3" />
+      <scope id="3671010239273888390" at="72,42,76,45">
+        <var name="cpb" id="3671010239273888390" />
+      </scope>
+      <scope id="3671010239273888390" at="71,47,78,35" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3671010239273888390" at="18,0,19,0" concept="7" trace="Neighbourhood" />
+      <node id="3671010239273888390" at="31,47,32,52" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3671010239273888390" at="21,0,22,0" concept="2" trace="myConceptNeighbourhood" />
+      <node id="3671010239273888390" at="53,47,54,38" concept="6" />
+      <node id="3671010239273888390" at="131,71,132,152" concept="5" />
+      <node id="3671010239273888390" at="132,152,133,33" concept="1" />
+      <node id="3671010239273888390" at="133,33,134,71" concept="1" />
+      <node id="3671010239273888390" at="134,71,135,76" concept="1" />
+      <node id="3671010239273888390" at="135,76,136,76" concept="1" />
+      <node id="3671010239273888390" at="136,76,137,91" concept="1" />
+      <node id="3671010239273888390" at="137,91,138,17" concept="1" />
+      <node id="3750398576815137849" at="138,17,139,209" concept="1" />
+      <node id="3750398576815181326" at="139,209,140,207" concept="1" />
+      <node id="3750398576815419989" at="140,207,141,197" concept="1" />
+      <node id="3671010239273888390" at="141,197,142,22" concept="6" />
+      <node id="3671010239273888390" at="131,0,144,0" concept="8" trace="createDescriptorForNeighbourhood#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3671010239273888390" at="53,47,54,38" />
+      <scope id="3671010239273888390" at="131,71,142,22">
+        <var name="b" id="3671010239273888390" />
+      </scope>
+      <scope id="3671010239273888390" at="131,0,144,0" />
+    </file>
+  </root>
+  <root nodeRef="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3671010239273888507">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3671010239273888507" at="21,0,22,0" concept="2" trace="props_Street" />
+      <node id="3671010239273888507" at="94,35,95,76" concept="5" />
+      <node id="3671010239273888507" at="95,76,96,38" concept="1" />
+      <node id="3671010239273888507" at="97,9,98,28" concept="6" />
+      <node id="3671010239273888507" at="93,40,97,9" concept="3" />
+      <scope id="3671010239273888507" at="94,35,96,38">
+        <var name="cpb" id="3671010239273888507" />
+      </scope>
+      <scope id="3671010239273888507" at="93,40,98,28" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3671010239273888507" at="21,0,22,0" concept="7" trace="Street" />
+      <node id="3671010239273888507" at="34,53,35,45" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3671010239273888507" at="24,0,25,0" concept="2" trace="myConceptStreet" />
+      <node id="3671010239273888507" at="59,40,60,31" concept="6" />
+      <node id="3671010239273888507" at="160,64,161,145" concept="5" />
+      <node id="3671010239273888507" at="161,145,162,33" concept="1" />
+      <node id="3671010239273888507" at="162,33,163,71" concept="1" />
+      <node id="3671010239273888507" at="163,71,164,91" concept="1" />
+      <node id="3671010239273888507" at="164,91,165,17" concept="1" />
+      <node id="3671010239273888529" at="165,17,166,69" concept="1" />
+      <node id="3671010239273892639" at="166,69,167,69" concept="1" />
+      <node id="3671010239273892649" at="167,69,168,68" concept="1" />
+      <node id="3671010239273888507" at="168,68,169,22" concept="6" />
+      <node id="3671010239273888507" at="160,0,171,0" concept="8" trace="createDescriptorForStreet#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3671010239273888507" at="59,40,60,31" />
+      <scope id="3671010239273888507" at="160,64,169,22">
+        <var name="b" id="3671010239273888507" />
+      </scope>
+      <scope id="3671010239273888507" at="160,0,171,0" />
+    </file>
+  </root>
+  <root nodeRef="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3671010239273892689">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3671010239273892689" at="12,0,13,0" concept="2" trace="props_BikeRack" />
+      <node id="3671010239273892689" at="30,37,31,76" concept="5" />
+      <node id="3671010239273892689" at="31,76,32,35" concept="1" />
+      <node id="3671010239273892689" at="32,35,33,40" concept="1" />
+      <node id="3671010239273892689" at="34,9,35,30" concept="6" />
+      <node id="3671010239273892689" at="29,42,34,9" concept="3" />
+      <scope id="3671010239273892689" at="30,37,33,40">
+        <var name="cpb" id="3671010239273892689" />
+      </scope>
+      <scope id="3671010239273892689" at="29,42,35,30" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3671010239273892689" at="12,0,13,0" concept="7" trace="BikeRack" />
+      <node id="3671010239273892689" at="25,116,26,47" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3671010239273892689" at="15,0,16,0" concept="2" trace="myConceptBikeRack" />
+      <node id="3671010239273892689" at="41,42,42,33" concept="6" />
+      <node id="3671010239273892689" at="72,66,73,147" concept="5" />
+      <node id="3671010239273892689" at="73,147,74,34" concept="1" />
+      <node id="3671010239273892689" at="74,34,75,71" concept="1" />
+      <node id="3671010239273892689" at="75,71,76,91" concept="1" />
+      <node id="3671010239273892689" at="76,91,77,17" concept="1" />
+      <node id="3671010239273892690" at="77,17,78,72" concept="1" />
+      <node id="3671010239273892694" at="78,72,79,69" concept="1" />
+      <node id="3671010239273892701" at="79,69,80,67" concept="1" />
+      <node id="3750398576815128392" at="80,67,81,180" concept="1" />
+      <node id="3750398576816201265" at="81,180,82,178" concept="1" />
+      <node id="3671010239273892689" at="82,178,83,22" concept="6" />
+      <node id="3671010239273892689" at="72,0,85,0" concept="8" trace="createDescriptorForBikeRack#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3671010239273892689" at="41,42,42,33" />
+      <scope id="3671010239273892689" at="72,66,83,22">
+        <var name="b" id="3671010239273892689" />
+      </scope>
+      <scope id="3671010239273892689" at="72,0,85,0" />
+    </file>
+  </root>
+  <root nodeRef="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3671010239273892711">
+    <file name="Quadrant.java">
+      <node id="3671010239273892711" at="15,0,16,0" concept="2" trace="myName" />
+      <node id="3671010239273892711" at="16,27,17,18" concept="6" />
+      <node id="3671010239273892711" at="19,0,20,0" concept="2" trace="myValue" />
+      <node id="3671010239273892711" at="20,36,21,18" concept="1" />
+      <node id="3671010239273892711" at="21,18,22,20" concept="1" />
+      <node id="3671010239273892711" at="24,25,25,19" concept="6" />
+      <node id="3671010239273892711" at="27,36,28,37" concept="6" />
+      <node id="3671010239273892711" at="30,47,31,76" concept="5" />
+      <node id="3671010239273892712" at="31,76,32,56" concept="1" />
+      <node id="3671010239273892713" at="32,56,33,56" concept="1" />
+      <node id="3671010239273892720" at="33,56,34,56" concept="1" />
+      <node id="3671010239273892730" at="34,56,35,56" concept="1" />
+      <node id="3671010239273892711" at="35,56,36,16" concept="6" />
+      <node id="3671010239273892711" at="38,39,39,23" concept="6" />
+      <node id="3671010239273892711" at="42,24,43,35" concept="6" />
+      <node id="3671010239273892712" at="45,55,46,25" concept="6" />
+      <node id="3671010239273892713" at="48,55,49,25" concept="6" />
+      <node id="3671010239273892720" at="51,55,52,25" concept="6" />
+      <node id="3671010239273892730" at="54,55,55,25" concept="6" />
+      <node id="3671010239273892711" at="56,5,57,33" concept="6" />
+      <node id="3671010239273892711" at="16,0,19,0" concept="4" trace="getName#()Ljava/lang/String;" />
+      <node id="3671010239273892711" at="24,0,27,0" concept="4" trace="getValue#()I" />
+      <node id="3671010239273892711" at="27,0,30,0" concept="4" trace="getValueAsString#()Ljava/lang/String;" />
+      <node id="3671010239273892711" at="38,0,41,0" concept="8" trace="getDefault#()LBixi/structure/Quadrant;" />
+      <node id="3671010239273892711" at="41,51,44,5" concept="3" />
+      <node id="3671010239273892712" at="44,5,47,5" concept="3" />
+      <node id="3671010239273892713" at="47,5,50,5" concept="3" />
+      <node id="3671010239273892720" at="50,5,53,5" concept="3" />
+      <node id="3671010239273892730" at="53,5,56,5" concept="3" />
+      <node id="3671010239273892711" at="20,0,24,0" concept="0" trace="Quadrant#(Ljava/lang/String;I)V" />
+      <node id="3671010239273892711" at="30,0,38,0" concept="8" trace="getConstants#()Ljava/util/List;" />
+      <node id="3671010239273892711" at="41,0,59,0" concept="8" trace="parseValue#(Ljava/lang/String;)LBixi/structure/Quadrant;" />
+      <scope id="3671010239273892711" at="16,27,17,18" />
+      <scope id="3671010239273892711" at="24,25,25,19" />
+      <scope id="3671010239273892711" at="27,36,28,37" />
+      <scope id="3671010239273892711" at="38,39,39,23" />
+      <scope id="3671010239273892711" at="42,24,43,35" />
+      <scope id="3671010239273892712" at="45,55,46,25" />
+      <scope id="3671010239273892713" at="48,55,49,25" />
+      <scope id="3671010239273892720" at="51,55,52,25" />
+      <scope id="3671010239273892730" at="54,55,55,25" />
+      <scope id="3671010239273892711" at="20,36,22,20" />
+      <scope id="3671010239273892711" at="16,0,19,0" />
+      <scope id="3671010239273892711" at="24,0,27,0" />
+      <scope id="3671010239273892711" at="27,0,30,0" />
+      <scope id="3671010239273892711" at="38,0,41,0" />
+      <scope id="3671010239273892711" at="20,0,24,0">
+        <var name="name" id="3671010239273892711" />
+        <var name="value" id="3671010239273892711" />
+      </scope>
+      <scope id="3671010239273892711" at="30,47,36,16">
+        <var name="list" id="3671010239273892711" />
+      </scope>
+      <scope id="3671010239273892711" at="30,0,38,0" />
+      <scope id="3671010239273892711" at="41,51,57,33" />
+      <scope id="3671010239273892711" at="41,0,59,0">
+        <var name="value" id="3671010239273892711" />
+      </scope>
+      <unit id="3671010239273892711" at="9,0,60,0" name="Bixi.structure.Quadrant" />
+    </file>
+    <file name="Quadrant_PropertySupport.java">
+      <node id="3671010239273892711" at="11,24,12,18" concept="6" />
+      <node id="3671010239273892711" at="13,5,14,93" concept="5" />
+      <node id="3671010239273892711" at="15,33,16,43" concept="5" />
+      <node id="3671010239273892711" at="17,45,18,20" concept="6" />
+      <node id="3671010239273892711" at="20,5,21,17" concept="6" />
+      <node id="3671010239273892711" at="24,24,25,18" concept="6" />
+      <node id="3671010239273892711" at="26,5,27,93" concept="5" />
+      <node id="3671010239273892711" at="28,33,29,43" concept="5" />
+      <node id="3671010239273892711" at="30,45,31,43" concept="6" />
+      <node id="3671010239273892711" at="33,5,34,16" concept="6" />
+      <node id="3671010239273892711" at="36,49,37,51" concept="5" />
+      <node id="3671010239273892711" at="38,27,39,32" concept="6" />
+      <node id="3671010239273892711" at="40,5,41,14" concept="6" />
+      <node id="3671010239273892711" at="10,44,13,5" concept="3" />
+      <node id="3671010239273892711" at="16,43,19,7" concept="3" />
+      <node id="3671010239273892711" at="23,47,26,5" concept="3" />
+      <node id="3671010239273892711" at="29,43,32,7" concept="3" />
+      <node id="3671010239273892711" at="37,51,40,5" concept="3" />
+      <node id="3671010239273892711" at="14,93,20,5" concept="9" />
+      <node id="3671010239273892711" at="27,93,33,5" concept="9" />
+      <node id="3671010239273892711" at="36,0,43,0" concept="4" trace="fromInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="3671010239273892711" at="10,0,23,0" concept="4" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <node id="3671010239273892711" at="23,0,36,0" concept="4" trace="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <scope id="3671010239273892711" at="11,24,12,18" />
+      <scope id="3671010239273892711" at="17,45,18,20" />
+      <scope id="3671010239273892711" at="24,24,25,18" />
+      <scope id="3671010239273892711" at="30,45,31,43" />
+      <scope id="3671010239273892711" at="38,27,39,32" />
+      <scope id="3671010239273892711" at="15,33,19,7">
+        <var name="constant" id="3671010239273892711" />
+      </scope>
+      <scope id="3671010239273892711" at="28,33,32,7">
+        <var name="constant" id="3671010239273892711" />
+      </scope>
+      <scope id="3671010239273892711" at="36,49,41,14">
+        <var name="constant" id="3671010239273892711" />
+      </scope>
+      <scope id="3671010239273892711" at="36,0,43,0">
+        <var name="value" id="3671010239273892711" />
+      </scope>
+      <scope id="3671010239273892711" at="10,44,21,17">
+        <var name="constants" id="3671010239273892711" />
+      </scope>
+      <scope id="3671010239273892711" at="23,47,34,16">
+        <var name="constants" id="3671010239273892711" />
+      </scope>
+      <scope id="3671010239273892711" at="10,0,23,0">
+        <var name="value" id="3671010239273892711" />
+      </scope>
+      <scope id="3671010239273892711" at="23,0,36,0">
+        <var name="value" id="3671010239273892711" />
+      </scope>
+      <unit id="3671010239273892711" at="9,0,44,0" name="Bixi.structure.Quadrant_PropertySupport" />
+    </file>
+  </root>
+  <root nodeRef="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3750398576813296163">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3750398576813296163" at="16,0,17,0" concept="2" trace="props_Members" />
+      <node id="3750398576813296163" at="58,36,59,76" concept="5" />
+      <node id="3750398576813296163" at="59,76,60,41" concept="1" />
+      <node id="3750398576813296163" at="60,41,61,39" concept="1" />
+      <node id="3750398576813296163" at="62,9,63,29" concept="6" />
+      <node id="3750398576813296163" at="57,41,62,9" concept="3" />
+      <scope id="3750398576813296163" at="58,36,61,39">
+        <var name="cpb" id="3750398576813296163" />
+      </scope>
+      <scope id="3750398576813296163" at="57,41,63,29" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3750398576813296163" at="16,0,17,0" concept="7" trace="Members" />
+      <node id="3750398576813296163" at="29,53,30,46" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3750398576813296163" at="19,0,20,0" concept="2" trace="myConceptMembers" />
+      <node id="3750398576813296163" at="49,41,50,32" concept="6" />
+      <node id="3750398576813296163" at="111,65,112,146" concept="5" />
+      <node id="3750398576813296163" at="112,146,113,33" concept="1" />
+      <node id="3750398576813296163" at="113,33,114,91" concept="1" />
+      <node id="3750398576813296163" at="114,91,115,17" concept="1" />
+      <node id="3750398576813296164" at="115,17,116,199" concept="1" />
+      <node id="3750398576813296163" at="116,199,117,22" concept="6" />
+      <node id="3750398576813296163" at="111,0,119,0" concept="8" trace="createDescriptorForMembers#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3750398576813296163" at="49,41,50,32" />
+      <scope id="3750398576813296163" at="111,65,117,22">
+        <var name="b" id="3750398576813296163" />
+      </scope>
+      <scope id="3750398576813296163" at="111,0,119,0" />
+    </file>
+  </root>
+  <root nodeRef="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3750398576815127784">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3750398576815127784" at="22,0,23,0" concept="2" trace="props_VerticalStreet" />
+      <node id="3750398576815127784" at="100,43,101,76" concept="5" />
+      <node id="3750398576815127784" at="101,76,102,35" concept="1" />
+      <node id="3750398576815127784" at="102,35,103,46" concept="1" />
+      <node id="3750398576815127784" at="104,9,105,36" concept="6" />
+      <node id="3750398576815127784" at="99,48,104,9" concept="3" />
+      <scope id="3750398576815127784" at="100,43,103,46">
+        <var name="cpb" id="3750398576815127784" />
+      </scope>
+      <scope id="3750398576815127784" at="99,48,105,36" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3750398576815127784" at="22,0,23,0" concept="7" trace="VerticalStreet" />
+      <node id="3750398576815127784" at="35,45,36,53" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3750398576815127784" at="25,0,26,0" concept="2" trace="myConceptVerticalStreet" />
+      <node id="3750398576815127784" at="61,48,62,39" concept="6" />
+      <node id="3750398576815127784" at="171,72,172,153" concept="5" />
+      <node id="3750398576815127784" at="172,153,173,34" concept="1" />
+      <node id="3750398576815127784" at="173,34,174,101" concept="1" />
+      <node id="3750398576815127784" at="174,101,175,91" concept="1" />
+      <node id="3750398576815127784" at="175,91,176,17" concept="1" />
+      <node id="3750398576815127784" at="176,17,177,22" concept="6" />
+      <node id="3750398576815127784" at="171,0,179,0" concept="8" trace="createDescriptorForVerticalStreet#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3750398576815127784" at="61,48,62,39" />
+      <scope id="3750398576815127784" at="171,72,177,22">
+        <var name="b" id="3750398576815127784" />
+      </scope>
+      <scope id="3750398576815127784" at="171,0,179,0" />
+    </file>
+  </root>
+  <root nodeRef="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3750398576815127785">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3750398576815127785" at="13,0,14,0" concept="2" trace="props_HorizontalStreet" />
+      <node id="3750398576815127785" at="37,45,38,76" concept="5" />
+      <node id="3750398576815127785" at="38,76,39,35" concept="1" />
+      <node id="3750398576815127785" at="39,35,40,48" concept="1" />
+      <node id="3750398576815127785" at="41,9,42,38" concept="6" />
+      <node id="3750398576815127785" at="36,50,41,9" concept="3" />
+      <scope id="3750398576815127785" at="37,45,40,48">
+        <var name="cpb" id="3750398576815127785" />
+      </scope>
+      <scope id="3750398576815127785" at="36,50,42,38" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3750398576815127785" at="13,0,14,0" concept="7" trace="HorizontalStreet" />
+      <node id="3750398576815127785" at="26,47,27,55" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3750398576815127785" at="16,0,17,0" concept="2" trace="myConceptHorizontalStreet" />
+      <node id="3750398576815127785" at="43,50,44,41" concept="6" />
+      <node id="3750398576815127785" at="85,74,86,155" concept="5" />
+      <node id="3750398576815127785" at="86,155,87,34" concept="1" />
+      <node id="3750398576815127785" at="87,34,88,101" concept="1" />
+      <node id="3750398576815127785" at="88,101,89,91" concept="1" />
+      <node id="3750398576815127785" at="89,91,90,17" concept="1" />
+      <node id="3750398576815127785" at="90,17,91,22" concept="6" />
+      <node id="3750398576815127785" at="85,0,93,0" concept="8" trace="createDescriptorForHorizontalStreet#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3750398576815127785" at="43,50,44,41" />
+      <scope id="3750398576815127785" at="85,74,91,22">
+        <var name="b" id="3750398576815127785" />
+      </scope>
+      <scope id="3750398576815127785" at="85,0,93,0" />
+    </file>
+  </root>
+  <root nodeRef="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962314146">
+    <file name="TimeSlot.java">
+      <node id="3919251110962314146" at="17,0,18,0" concept="2" trace="myName" />
+      <node id="3919251110962314146" at="18,27,19,18" concept="6" />
+      <node id="3919251110962314146" at="21,0,22,0" concept="2" trace="myValue" />
+      <node id="3919251110962314146" at="22,47,23,18" concept="1" />
+      <node id="3919251110962314146" at="23,18,24,20" concept="1" />
+      <node id="3919251110962314146" at="26,28,27,19" concept="6" />
+      <node id="3919251110962314146" at="29,36,30,19" concept="6" />
+      <node id="3919251110962314146" at="32,47,33,76" concept="5" />
+      <node id="3919251110962314147" at="33,76,34,58" concept="1" />
+      <node id="3919251110962314148" at="34,58,35,58" concept="1" />
+      <node id="3919251110962314153" at="35,58,36,59" concept="1" />
+      <node id="3919251110962314160" at="36,59,37,60" concept="1" />
+      <node id="3919251110962314169" at="37,60,38,60" concept="1" />
+      <node id="3919251110962314180" at="38,60,39,59" concept="1" />
+      <node id="3919251110962314146" at="39,59,40,16" concept="6" />
+      <node id="3919251110962314146" at="42,39,43,16" concept="6" />
+      <node id="3919251110962314146" at="46,24,47,35" concept="6" />
+      <node id="3919251110962314147" at="49,57,50,27" concept="6" />
+      <node id="3919251110962314148" at="52,57,53,27" concept="6" />
+      <node id="3919251110962314153" at="55,58,56,28" concept="6" />
+      <node id="3919251110962314160" at="58,59,59,29" concept="6" />
+      <node id="3919251110962314169" at="61,59,62,29" concept="6" />
+      <node id="3919251110962314180" at="64,58,65,28" concept="6" />
+      <node id="3919251110962314146" at="66,5,67,33" concept="6" />
+      <node id="3919251110962314146" at="18,0,21,0" concept="4" trace="getName#()Ljava/lang/String;" />
+      <node id="3919251110962314146" at="26,0,29,0" concept="4" trace="getValue#()Ljava/lang/String;" />
+      <node id="3919251110962314146" at="29,0,32,0" concept="4" trace="getValueAsString#()Ljava/lang/String;" />
+      <node id="3919251110962314146" at="42,0,45,0" concept="8" trace="getDefault#()LBixi/structure/TimeSlot;" />
+      <node id="3919251110962314146" at="45,51,48,5" concept="3" />
+      <node id="3919251110962314147" at="48,5,51,5" concept="3" />
+      <node id="3919251110962314148" at="51,5,54,5" concept="3" />
+      <node id="3919251110962314153" at="54,5,57,5" concept="3" />
+      <node id="3919251110962314160" at="57,5,60,5" concept="3" />
+      <node id="3919251110962314169" at="60,5,63,5" concept="3" />
+      <node id="3919251110962314180" at="63,5,66,5" concept="3" />
+      <node id="3919251110962314146" at="22,0,26,0" concept="0" trace="TimeSlot#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="3919251110962314146" at="32,0,42,0" concept="8" trace="getConstants#()Ljava/util/List;" />
+      <node id="3919251110962314146" at="45,0,69,0" concept="8" trace="parseValue#(Ljava/lang/String;)LBixi/structure/TimeSlot;" />
+      <scope id="3919251110962314146" at="18,27,19,18" />
+      <scope id="3919251110962314146" at="26,28,27,19" />
+      <scope id="3919251110962314146" at="29,36,30,19" />
+      <scope id="3919251110962314146" at="42,39,43,16" />
+      <scope id="3919251110962314146" at="46,24,47,35" />
+      <scope id="3919251110962314147" at="49,57,50,27" />
+      <scope id="3919251110962314148" at="52,57,53,27" />
+      <scope id="3919251110962314153" at="55,58,56,28" />
+      <scope id="3919251110962314160" at="58,59,59,29" />
+      <scope id="3919251110962314169" at="61,59,62,29" />
+      <scope id="3919251110962314180" at="64,58,65,28" />
+      <scope id="3919251110962314146" at="22,47,24,20" />
+      <scope id="3919251110962314146" at="18,0,21,0" />
+      <scope id="3919251110962314146" at="26,0,29,0" />
+      <scope id="3919251110962314146" at="29,0,32,0" />
+      <scope id="3919251110962314146" at="42,0,45,0" />
+      <scope id="3919251110962314146" at="22,0,26,0">
+        <var name="name" id="3919251110962314146" />
+        <var name="value" id="3919251110962314146" />
+      </scope>
+      <scope id="3919251110962314146" at="32,47,40,16">
+        <var name="list" id="3919251110962314146" />
+      </scope>
+      <scope id="3919251110962314146" at="32,0,42,0" />
+      <scope id="3919251110962314146" at="45,51,67,33" />
+      <scope id="3919251110962314146" at="45,0,69,0">
+        <var name="value" id="3919251110962314146" />
+      </scope>
+      <unit id="3919251110962314146" at="9,0,70,0" name="Bixi.structure.TimeSlot" />
+    </file>
+    <file name="TimeSlot_PropertySupport.java">
+      <node id="3919251110962314146" at="11,24,12,18" concept="6" />
+      <node id="3919251110962314146" at="13,5,14,93" concept="5" />
+      <node id="3919251110962314146" at="15,33,16,43" concept="5" />
+      <node id="3919251110962314146" at="17,45,18,20" concept="6" />
+      <node id="3919251110962314146" at="20,5,21,17" concept="6" />
+      <node id="3919251110962314146" at="24,24,25,18" concept="6" />
+      <node id="3919251110962314146" at="26,5,27,93" concept="5" />
+      <node id="3919251110962314146" at="28,33,29,43" concept="5" />
+      <node id="3919251110962314146" at="30,45,31,43" concept="6" />
+      <node id="3919251110962314146" at="33,5,34,16" concept="6" />
+      <node id="3919251110962314146" at="36,49,37,51" concept="5" />
+      <node id="3919251110962314146" at="38,27,39,32" concept="6" />
+      <node id="3919251110962314146" at="40,5,41,14" concept="6" />
+      <node id="3919251110962314146" at="10,44,13,5" concept="3" />
+      <node id="3919251110962314146" at="16,43,19,7" concept="3" />
+      <node id="3919251110962314146" at="23,47,26,5" concept="3" />
+      <node id="3919251110962314146" at="29,43,32,7" concept="3" />
+      <node id="3919251110962314146" at="37,51,40,5" concept="3" />
+      <node id="3919251110962314146" at="14,93,20,5" concept="9" />
+      <node id="3919251110962314146" at="27,93,33,5" concept="9" />
+      <node id="3919251110962314146" at="36,0,43,0" concept="4" trace="fromInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="3919251110962314146" at="10,0,23,0" concept="4" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <node id="3919251110962314146" at="23,0,36,0" concept="4" trace="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <scope id="3919251110962314146" at="11,24,12,18" />
+      <scope id="3919251110962314146" at="17,45,18,20" />
+      <scope id="3919251110962314146" at="24,24,25,18" />
+      <scope id="3919251110962314146" at="30,45,31,43" />
+      <scope id="3919251110962314146" at="38,27,39,32" />
+      <scope id="3919251110962314146" at="15,33,19,7">
+        <var name="constant" id="3919251110962314146" />
+      </scope>
+      <scope id="3919251110962314146" at="28,33,32,7">
+        <var name="constant" id="3919251110962314146" />
+      </scope>
+      <scope id="3919251110962314146" at="36,49,41,14">
+        <var name="constant" id="3919251110962314146" />
+      </scope>
+      <scope id="3919251110962314146" at="36,0,43,0">
+        <var name="value" id="3919251110962314146" />
+      </scope>
+      <scope id="3919251110962314146" at="10,44,21,17">
+        <var name="constants" id="3919251110962314146" />
+      </scope>
+      <scope id="3919251110962314146" at="23,47,34,16">
+        <var name="constants" id="3919251110962314146" />
+      </scope>
+      <scope id="3919251110962314146" at="10,0,23,0">
+        <var name="value" id="3919251110962314146" />
+      </scope>
+      <scope id="3919251110962314146" at="23,0,36,0">
+        <var name="value" id="3919251110962314146" />
+      </scope>
+      <unit id="3919251110962314146" at="9,0,44,0" name="Bixi.structure.TimeSlot_PropertySupport" />
+    </file>
+  </root>
+  <root nodeRef="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962314193">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3919251110962314193" at="19,0,20,0" concept="2" trace="props_RandomMovement" />
+      <node id="3919251110962314193" at="80,43,81,76" concept="5" />
+      <node id="3919251110962314193" at="81,76,82,48" concept="1" />
+      <node id="3919251110962314193" at="82,48,83,46" concept="1" />
+      <node id="3919251110962314193" at="84,9,85,36" concept="6" />
+      <node id="3919251110962314193" at="79,48,84,9" concept="3" />
+      <scope id="3919251110962314193" at="80,43,83,46">
+        <var name="cpb" id="3919251110962314193" />
+      </scope>
+      <scope id="3919251110962314193" at="79,48,85,36" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3919251110962314193" at="19,0,20,0" concept="7" trace="RandomMovement" />
+      <node id="3919251110962314193" at="32,52,33,53" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3919251110962314193" at="22,0,23,0" concept="2" trace="myConceptRandomMovement" />
+      <node id="3919251110962314193" at="55,48,56,39" concept="6" />
+      <node id="3919251110962314193" at="144,72,145,153" concept="5" />
+      <node id="3919251110962314193" at="145,153,146,34" concept="1" />
+      <node id="3919251110962314193" at="146,34,147,103" concept="1" />
+      <node id="3919251110962314193" at="147,103,148,91" concept="1" />
+      <node id="3919251110962314193" at="148,91,149,17" concept="1" />
+      <node id="3919251110962314193" at="149,17,150,22" concept="6" />
+      <node id="3919251110962314193" at="144,0,152,0" concept="8" trace="createDescriptorForRandomMovement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3919251110962314193" at="55,48,56,39" />
+      <scope id="3919251110962314193" at="144,72,150,22">
+        <var name="b" id="3919251110962314193" />
+      </scope>
+      <scope id="3919251110962314193" at="144,0,152,0" />
+    </file>
+  </root>
+  <root nodeRef="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962314194">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3919251110962314194" at="20,0,21,0" concept="2" trace="props_Redistribution" />
+      <node id="3919251110962314194" at="87,43,88,76" concept="5" />
+      <node id="3919251110962314194" at="88,76,89,48" concept="1" />
+      <node id="3919251110962314194" at="89,48,90,46" concept="1" />
+      <node id="3919251110962314194" at="91,9,92,36" concept="6" />
+      <node id="3919251110962314194" at="86,48,91,9" concept="3" />
+      <scope id="3919251110962314194" at="87,43,90,46">
+        <var name="cpb" id="3919251110962314194" />
+      </scope>
+      <scope id="3919251110962314194" at="86,48,92,36" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3919251110962314194" at="20,0,21,0" concept="7" trace="Redistribution" />
+      <node id="3919251110962314194" at="33,53,34,53" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3919251110962314194" at="23,0,24,0" concept="2" trace="myConceptRedistribution" />
+      <node id="3919251110962314194" at="57,48,58,39" concept="6" />
+      <node id="3919251110962314194" at="152,72,153,153" concept="5" />
+      <node id="3919251110962314194" at="153,153,154,34" concept="1" />
+      <node id="3919251110962314194" at="154,34,155,103" concept="1" />
+      <node id="3919251110962314194" at="155,103,156,91" concept="1" />
+      <node id="3919251110962314194" at="156,91,157,17" concept="1" />
+      <node id="3919251110962314194" at="157,17,158,22" concept="6" />
+      <node id="3919251110962314194" at="152,0,160,0" concept="8" trace="createDescriptorForRedistribution#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3919251110962314194" at="57,48,58,39" />
+      <scope id="3919251110962314194" at="152,72,158,22">
+        <var name="b" id="3919251110962314194" />
+      </scope>
+      <scope id="3919251110962314194" at="152,0,160,0" />
+    </file>
+  </root>
+  <root nodeRef="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962314226">
+    <file name="WeekDay.java">
+      <node id="3919251110962314226" at="18,0,19,0" concept="2" trace="myName" />
+      <node id="3919251110962314226" at="19,27,20,18" concept="6" />
+      <node id="3919251110962314226" at="22,0,23,0" concept="2" trace="myValue" />
+      <node id="3919251110962314226" at="23,46,24,18" concept="1" />
+      <node id="3919251110962314226" at="24,18,25,20" concept="1" />
+      <node id="3919251110962314226" at="27,28,28,19" concept="6" />
+      <node id="3919251110962314226" at="30,36,31,19" concept="6" />
+      <node id="3919251110962314226" at="33,46,34,74" concept="5" />
+      <node id="3919251110962314227" at="34,74,35,59" concept="1" />
+      <node id="3919251110962314228" at="35,59,36,60" concept="1" />
+      <node id="3919251110962314233" at="36,60,37,62" concept="1" />
+      <node id="3919251110962314240" at="37,62,38,61" concept="1" />
+      <node id="3919251110962314249" at="38,61,39,59" concept="1" />
+      <node id="3919251110962314260" at="39,59,40,61" concept="1" />
+      <node id="3919251110962314273" at="40,61,41,59" concept="1" />
+      <node id="3919251110962314226" at="41,59,42,16" concept="6" />
+      <node id="3919251110962314226" at="44,38,45,16" concept="6" />
+      <node id="3919251110962314226" at="48,24,49,34" concept="6" />
+      <node id="3919251110962314227" at="51,58,52,28" concept="6" />
+      <node id="3919251110962314228" at="54,59,55,29" concept="6" />
+      <node id="3919251110962314233" at="57,61,58,31" concept="6" />
+      <node id="3919251110962314240" at="60,60,61,30" concept="6" />
+      <node id="3919251110962314249" at="63,58,64,28" concept="6" />
+      <node id="3919251110962314260" at="66,60,67,30" concept="6" />
+      <node id="3919251110962314273" at="69,58,70,28" concept="6" />
+      <node id="3919251110962314226" at="71,5,72,32" concept="6" />
+      <node id="3919251110962314226" at="19,0,22,0" concept="4" trace="getName#()Ljava/lang/String;" />
+      <node id="3919251110962314226" at="27,0,30,0" concept="4" trace="getValue#()Ljava/lang/String;" />
+      <node id="3919251110962314226" at="30,0,33,0" concept="4" trace="getValueAsString#()Ljava/lang/String;" />
+      <node id="3919251110962314226" at="44,0,47,0" concept="8" trace="getDefault#()LBixi/structure/WeekDay;" />
+      <node id="3919251110962314226" at="47,50,50,5" concept="3" />
+      <node id="3919251110962314227" at="50,5,53,5" concept="3" />
+      <node id="3919251110962314228" at="53,5,56,5" concept="3" />
+      <node id="3919251110962314233" at="56,5,59,5" concept="3" />
+      <node id="3919251110962314240" at="59,5,62,5" concept="3" />
+      <node id="3919251110962314249" at="62,5,65,5" concept="3" />
+      <node id="3919251110962314260" at="65,5,68,5" concept="3" />
+      <node id="3919251110962314273" at="68,5,71,5" concept="3" />
+      <node id="3919251110962314226" at="23,0,27,0" concept="0" trace="WeekDay#(Ljava/lang/String;Ljava/lang/String;)V" />
+      <node id="3919251110962314226" at="33,0,44,0" concept="8" trace="getConstants#()Ljava/util/List;" />
+      <node id="3919251110962314226" at="47,0,74,0" concept="8" trace="parseValue#(Ljava/lang/String;)LBixi/structure/WeekDay;" />
+      <scope id="3919251110962314226" at="19,27,20,18" />
+      <scope id="3919251110962314226" at="27,28,28,19" />
+      <scope id="3919251110962314226" at="30,36,31,19" />
+      <scope id="3919251110962314226" at="44,38,45,16" />
+      <scope id="3919251110962314226" at="48,24,49,34" />
+      <scope id="3919251110962314227" at="51,58,52,28" />
+      <scope id="3919251110962314228" at="54,59,55,29" />
+      <scope id="3919251110962314233" at="57,61,58,31" />
+      <scope id="3919251110962314240" at="60,60,61,30" />
+      <scope id="3919251110962314249" at="63,58,64,28" />
+      <scope id="3919251110962314260" at="66,60,67,30" />
+      <scope id="3919251110962314273" at="69,58,70,28" />
+      <scope id="3919251110962314226" at="23,46,25,20" />
+      <scope id="3919251110962314226" at="19,0,22,0" />
+      <scope id="3919251110962314226" at="27,0,30,0" />
+      <scope id="3919251110962314226" at="30,0,33,0" />
+      <scope id="3919251110962314226" at="44,0,47,0" />
+      <scope id="3919251110962314226" at="23,0,27,0">
+        <var name="name" id="3919251110962314226" />
+        <var name="value" id="3919251110962314226" />
+      </scope>
+      <scope id="3919251110962314226" at="33,46,42,16">
+        <var name="list" id="3919251110962314226" />
+      </scope>
+      <scope id="3919251110962314226" at="33,0,44,0" />
+      <scope id="3919251110962314226" at="47,50,72,32" />
+      <scope id="3919251110962314226" at="47,0,74,0">
+        <var name="value" id="3919251110962314226" />
+      </scope>
+      <unit id="3919251110962314226" at="9,0,75,0" name="Bixi.structure.WeekDay" />
+    </file>
+    <file name="WeekDay_PropertySupport.java">
+      <node id="3919251110962314226" at="11,24,12,18" concept="6" />
+      <node id="3919251110962314226" at="13,5,14,91" concept="5" />
+      <node id="3919251110962314226" at="15,33,16,42" concept="5" />
+      <node id="3919251110962314226" at="17,45,18,20" concept="6" />
+      <node id="3919251110962314226" at="20,5,21,17" concept="6" />
+      <node id="3919251110962314226" at="24,24,25,18" concept="6" />
+      <node id="3919251110962314226" at="26,5,27,91" concept="5" />
+      <node id="3919251110962314226" at="28,33,29,42" concept="5" />
+      <node id="3919251110962314226" at="30,45,31,43" concept="6" />
+      <node id="3919251110962314226" at="33,5,34,16" concept="6" />
+      <node id="3919251110962314226" at="36,49,37,49" concept="5" />
+      <node id="3919251110962314226" at="38,27,39,32" concept="6" />
+      <node id="3919251110962314226" at="40,5,41,14" concept="6" />
+      <node id="3919251110962314226" at="10,44,13,5" concept="3" />
+      <node id="3919251110962314226" at="16,42,19,7" concept="3" />
+      <node id="3919251110962314226" at="23,47,26,5" concept="3" />
+      <node id="3919251110962314226" at="29,42,32,7" concept="3" />
+      <node id="3919251110962314226" at="37,49,40,5" concept="3" />
+      <node id="3919251110962314226" at="14,91,20,5" concept="9" />
+      <node id="3919251110962314226" at="27,91,33,5" concept="9" />
+      <node id="3919251110962314226" at="36,0,43,0" concept="4" trace="fromInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <node id="3919251110962314226" at="10,0,23,0" concept="4" trace="canSetValue#(Ljava/lang/String;)Z" />
+      <node id="3919251110962314226" at="23,0,36,0" concept="4" trace="toInternalValue#(Ljava/lang/String;)Ljava/lang/String;" />
+      <scope id="3919251110962314226" at="11,24,12,18" />
+      <scope id="3919251110962314226" at="17,45,18,20" />
+      <scope id="3919251110962314226" at="24,24,25,18" />
+      <scope id="3919251110962314226" at="30,45,31,43" />
+      <scope id="3919251110962314226" at="38,27,39,32" />
+      <scope id="3919251110962314226" at="15,33,19,7">
+        <var name="constant" id="3919251110962314226" />
+      </scope>
+      <scope id="3919251110962314226" at="28,33,32,7">
+        <var name="constant" id="3919251110962314226" />
+      </scope>
+      <scope id="3919251110962314226" at="36,49,41,14">
+        <var name="constant" id="3919251110962314226" />
+      </scope>
+      <scope id="3919251110962314226" at="36,0,43,0">
+        <var name="value" id="3919251110962314226" />
+      </scope>
+      <scope id="3919251110962314226" at="10,44,21,17">
+        <var name="constants" id="3919251110962314226" />
+      </scope>
+      <scope id="3919251110962314226" at="23,47,34,16">
+        <var name="constants" id="3919251110962314226" />
+      </scope>
+      <scope id="3919251110962314226" at="10,0,23,0">
+        <var name="value" id="3919251110962314226" />
+      </scope>
+      <scope id="3919251110962314226" at="23,0,36,0">
+        <var name="value" id="3919251110962314226" />
+      </scope>
+      <unit id="3919251110962314226" at="9,0,44,0" name="Bixi.structure.WeekDay_PropertySupport" />
+    </file>
+  </root>
+  <root nodeRef="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962314396">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3919251110962314396" at="14,0,15,0" concept="2" trace="props_Member" />
+      <node id="3919251110962314396" at="44,35,45,76" concept="5" />
+      <node id="3919251110962314396" at="45,76,46,35" concept="1" />
+      <node id="3919251110962314396" at="46,35,47,38" concept="1" />
+      <node id="3919251110962314396" at="48,9,49,28" concept="6" />
+      <node id="3919251110962314396" at="43,40,48,9" concept="3" />
+      <scope id="3919251110962314396" at="44,35,47,38">
+        <var name="cpb" id="3919251110962314396" />
+      </scope>
+      <scope id="3919251110962314396" at="43,40,49,28" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3919251110962314396" at="14,0,15,0" concept="7" trace="Member" />
+      <node id="3919251110962314396" at="27,55,28,45" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3919251110962314396" at="17,0,18,0" concept="2" trace="myConceptMember" />
+      <node id="3919251110962314396" at="45,40,46,31" concept="6" />
+      <node id="3919251110962314396" at="93,64,94,145" concept="5" />
+      <node id="3919251110962314396" at="94,145,95,34" concept="1" />
+      <node id="3919251110962314396" at="95,34,96,71" concept="1" />
+      <node id="3919251110962314396" at="96,71,97,91" concept="1" />
+      <node id="3919251110962314396" at="97,91,98,17" concept="1" />
+      <node id="3919251110962315133" at="98,17,99,61" concept="1" />
+      <node id="3919251110962314396" at="99,61,100,22" concept="6" />
+      <node id="3919251110962314396" at="93,0,102,0" concept="8" trace="createDescriptorForMember#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3919251110962314396" at="45,40,46,31" />
+      <scope id="3919251110962314396" at="93,64,100,22">
+        <var name="b" id="3919251110962314396" />
+      </scope>
+      <scope id="3919251110962314396" at="93,0,102,0" />
+    </file>
+  </root>
+  <root nodeRef="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962314401">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3919251110962314401" at="15,0,16,0" concept="2" trace="props_MemberMovement" />
+      <node id="3919251110962314401" at="51,43,52,76" concept="5" />
+      <node id="3919251110962314401" at="52,76,53,48" concept="1" />
+      <node id="3919251110962314401" at="53,48,54,46" concept="1" />
+      <node id="3919251110962314401" at="55,9,56,36" concept="6" />
+      <node id="3919251110962314401" at="50,48,55,9" concept="3" />
+      <scope id="3919251110962314401" at="51,43,54,46">
+        <var name="cpb" id="3919251110962314401" />
+      </scope>
+      <scope id="3919251110962314401" at="50,48,56,36" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3919251110962314401" at="15,0,16,0" concept="7" trace="MemberMovement" />
+      <node id="3919251110962314401" at="28,45,29,53" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3919251110962314401" at="18,0,19,0" concept="2" trace="myConceptMemberMovement" />
+      <node id="3919251110962314401" at="47,48,48,39" concept="6" />
+      <node id="3919251110962314401" at="102,72,103,153" concept="5" />
+      <node id="3919251110962314401" at="103,153,104,34" concept="1" />
+      <node id="3919251110962314401" at="104,34,105,103" concept="1" />
+      <node id="3919251110962314401" at="105,103,106,91" concept="1" />
+      <node id="3919251110962314401" at="106,91,107,17" concept="1" />
+      <node id="3919251110962315033" at="107,17,108,170" concept="1" />
+      <node id="3919251110962314401" at="108,170,109,22" concept="6" />
+      <node id="3919251110962314401" at="102,0,111,0" concept="8" trace="createDescriptorForMemberMovement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3919251110962314401" at="47,48,48,39" />
+      <scope id="3919251110962314401" at="102,72,109,22">
+        <var name="b" id="3919251110962314401" />
+      </scope>
+      <scope id="3919251110962314401" at="102,0,111,0" />
+    </file>
+  </root>
+  <root nodeRef="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962315059">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="3919251110962315059" at="17,0,18,0" concept="2" trace="props_Movement" />
+      <node id="3919251110962315059" at="65,37,66,76" concept="5" />
+      <node id="3919251110962315059" at="66,76,67,42" concept="1" />
+      <node id="3919251110962315059" at="67,42,68,40" concept="1" />
+      <node id="3919251110962315059" at="69,9,70,30" concept="6" />
+      <node id="3919251110962315059" at="64,42,69,9" concept="3" />
+      <scope id="3919251110962315059" at="65,37,68,40">
+        <var name="cpb" id="3919251110962315059" />
+      </scope>
+      <scope id="3919251110962315059" at="64,42,70,30" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="3919251110962315059" at="17,0,18,0" concept="7" trace="Movement" />
+      <node id="3919251110962315059" at="30,46,31,47" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="3919251110962315059" at="20,0,21,0" concept="2" trace="myConceptMovement" />
+      <node id="3919251110962315059" at="51,42,52,33" concept="6" />
+      <node id="3919251110962315059" at="119,66,120,147" concept="5" />
+      <node id="3919251110962315059" at="120,147,121,34" concept="1" />
+      <node id="3919251110962315059" at="121,34,122,91" concept="1" />
+      <node id="3919251110962315059" at="122,91,123,17" concept="1" />
+      <node id="3919251110962315085" at="123,17,124,68" concept="1" />
+      <node id="3919251110962315088" at="124,68,125,67" concept="1" />
+      <node id="3919251110962315093" at="125,67,126,72" concept="1" />
+      <node id="3919251110962315100" at="126,72,127,174" concept="1" />
+      <node id="3919251110962315103" at="127,174,128,174" concept="1" />
+      <node id="3919251110962315059" at="128,174,129,22" concept="6" />
+      <node id="3919251110962315059" at="119,0,131,0" concept="8" trace="createDescriptorForMovement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="3919251110962315059" at="51,42,52,33" />
+      <scope id="3919251110962315059" at="119,66,129,22">
+        <var name="b" id="3919251110962315059" />
+      </scope>
+      <scope id="3919251110962315059" at="119,0,131,0" />
+    </file>
+  </root>
+</debug-info>
+

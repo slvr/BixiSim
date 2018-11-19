@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="4fqr" ref="r:fa713d69-08ea-4732-b1f2-cb07f9e103ef(jetbrains.mps.execution.util.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -23,6 +24,8 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -61,15 +64,28 @@
     <node concept="PrWs8" id="3bM35NuJuEx" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="3bM35NuJuFR" role="1TKVEi">
-      <property role="IQ2ns" value="3671010239273888503" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="streets" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="3bM35NuJuFV" resolve="Street" />
+    <node concept="PrWs8" id="3gc5UapbDFy" role="PzmwI">
+      <ref role="PrY4T" to="4fqr:431DWIovi3l" resolve="IMainClass" />
     </node>
-    <node concept="1TJgyj" id="3pzYxVetFJm" role="1TKVEi">
-      <property role="IQ2ns" value="3919251110962314198" />
+    <node concept="PrWs8" id="3gc5UapbDFQ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="3gc5UapcAgT" role="1TKVEi">
+      <property role="IQ2ns" value="3750398576815137849" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="horizontalStreets" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3gc5UapczND" resolve="HorizontalStreet" />
+    </node>
+    <node concept="1TJgyj" id="3gc5UapcKSe" role="1TKVEi">
+      <property role="IQ2ns" value="3750398576815181326" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="verticalStreets" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3gc5UapczNC" resolve="VerticalStreet" />
+    </node>
+    <node concept="1TJgyj" id="3gc5UapdF9l" role="1TKVEi">
+      <property role="IQ2ns" value="3750398576815419989" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="racks" />
       <property role="20lbJX" value="0..n" />
@@ -79,14 +95,11 @@
   <node concept="1TIwiD" id="3bM35NuJuFV">
     <property role="EcuMT" value="3671010239273888507" />
     <property role="TrG5h" value="Street" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3bM35NuJuFW" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyi" id="3bM35NuJuGd" role="1TKVEl">
-      <property role="IQ2nx" value="3671010239273888525" />
-      <property role="TrG5h" value="direction" />
-      <ref role="AX2Wp" node="3bM35NuJuG4" resolve="StreetOrientation" />
     </node>
     <node concept="1TJgyi" id="3bM35NuJuGh" role="1TKVEl">
       <property role="IQ2nx" value="3671010239273888529" />
@@ -102,20 +115,6 @@
       <property role="IQ2nx" value="3671010239273892649" />
       <property role="TrG5h" value="placement" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
-  </node>
-  <node concept="AxPO7" id="3bM35NuJuG4">
-    <property role="TrG5h" value="StreetOrientation" />
-    <property role="PDuV0" value="true" />
-    <property role="3lZH7k" value="derive_from_internal_value" />
-    <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
-    <node concept="M4N5e" id="3bM35NuJuG5" role="M5hS2">
-      <property role="1uS6qv" value="vertical" />
-      <property role="1uS6qo" value="Vertical" />
-    </node>
-    <node concept="M4N5e" id="3bM35NuJuG6" role="M5hS2">
-      <property role="1uS6qo" value="Horizontal" />
-      <property role="1uS6qv" value="horizontal" />
     </node>
   </node>
   <node concept="1TIwiD" id="3bM35NuJvHh">
@@ -137,22 +136,22 @@
       <property role="TrG5h" value="quadrant" />
       <ref role="AX2Wp" node="3bM35NuJvHB" resolve="Quadrant" />
     </node>
-    <node concept="PrWs8" id="3pzYxVetFJj" role="PzmwI">
+    <node concept="PrWs8" id="3gc5UapbWbv" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="1TJgyj" id="3pzYxVetFJE" role="1TKVEi">
-      <property role="IQ2ns" value="3919251110962314218" />
+    <node concept="1TJgyj" id="3gc5UapczX8" role="1TKVEi">
+      <property role="IQ2ns" value="3750398576815128392" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="streetH" />
+      <property role="20kJfa" value="horizontalStreet" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3bM35NuJuFV" resolve="Street" />
+      <ref role="20lvS9" node="3gc5UapczND" resolve="HorizontalStreet" />
     </node>
-    <node concept="1TJgyj" id="3pzYxVetFJH" role="1TKVEi">
-      <property role="IQ2ns" value="3919251110962314221" />
+    <node concept="1TJgyj" id="3gc5UapgDSL" role="1TKVEi">
+      <property role="IQ2ns" value="3750398576816201265" />
       <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="StreetV" />
+      <property role="20kJfa" value="verticalStreet" />
       <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="3bM35NuJuFV" resolve="Street" />
+      <ref role="20lvS9" node="3gc5UapczNC" resolve="VerticalStreet" />
     </node>
   </node>
   <node concept="AxPO7" id="3bM35NuJvHB">
@@ -254,7 +253,6 @@
   <node concept="1TIwiD" id="3pzYxVetFMs">
     <property role="EcuMT" value="3919251110962314396" />
     <property role="TrG5h" value="Member" />
-    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3pzYxVetFMt" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -310,6 +308,29 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="3bM35NuJvHh" resolve="BikeRack" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3gc5Uap5$Cz">
+    <property role="EcuMT" value="3750398576813296163" />
+    <property role="TrG5h" value="Members" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3gc5Uap5$C$" role="1TKVEi">
+      <property role="IQ2ns" value="3750398576813296164" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="members" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="3pzYxVetFMs" resolve="Member" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3gc5UapczNC">
+    <property role="EcuMT" value="3750398576815127784" />
+    <property role="TrG5h" value="VerticalStreet" />
+    <ref role="1TJDcQ" node="3bM35NuJuFV" resolve="Street" />
+  </node>
+  <node concept="1TIwiD" id="3gc5UapczND">
+    <property role="EcuMT" value="3750398576815127785" />
+    <property role="TrG5h" value="HorizontalStreet" />
+    <ref role="1TJDcQ" node="3bM35NuJuFV" resolve="Street" />
   </node>
 </model>
 
