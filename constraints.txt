@@ -1,0 +1,10 @@
+Constraints:
+-neighborhood can be parent of its children
+-its children can be children of neighborhood
+-member has unique ID
+-mvt has more or equal than 1 bike
+-membermvt has only 1 bike
+-Streets must not be on edge of neighbourhood
+-bikerack must have a positive number of bike and a positive max bike limit
+-the number of bikes must be inferior to the limit
+-bikerack is on a corner of intersecting streets
