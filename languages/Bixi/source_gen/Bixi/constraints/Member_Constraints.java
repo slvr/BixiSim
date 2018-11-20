@@ -57,7 +57,7 @@ public class Member_Constraints extends BaseConstraintsDescriptor {
       @Override
       public boolean validateValue(SNode node, final String propertyValue) {
         String propertyName = "ID";
-        return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.cast(SNodeOperations.getParent(node), MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x340c17a299164a23L, "Bixi.structure.Members")), MetaAdapterFactory.getContainmentLink(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x340c17a299164a23L, 0x340c17a299164a24L, "members"))).where(new IWhereFilter<SNode>() {
+        return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, "Bixi.structure.Neighbourhood"), false, false), MetaAdapterFactory.getContainmentLink(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, 0x340c17a2995353a0L, "members"))).where(new IWhereFilter<SNode>() {
           public boolean accept(SNode it) {
             return Objects.equals(SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL, 0x3663fa1ece76bf7dL, "ID")), (SPropertyOperations.getInteger(propertyValue)));
           }
@@ -67,7 +67,7 @@ public class Member_Constraints extends BaseConstraintsDescriptor {
     return properties;
   }
   private static boolean staticCanBeAChild(SNode node, SNode parentNode, SAbstractConcept childConcept, SContainmentLink link) {
-    return SNodeOperations.isInstanceOf(parentNode, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x340c17a299164a23L, "Bixi.structure.Members"));
+    return SNodeOperations.isInstanceOf(parentNode, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, "Bixi.structure.Neighbourhood"));
   }
   private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:e0e61ae0-23de-4e57-9ddf-43be00c8df9c(Bixi.constraints)", "3750398576813341761");
 }

@@ -13,7 +13,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_HorizontalStreet;
   private ConceptPresentation props_Member;
   private ConceptPresentation props_MemberMovement;
-  private ConceptPresentation props_Members;
   private ConceptPresentation props_Movement;
   private ConceptPresentation props_Neighbourhood;
   private ConceptPresentation props_RandomMovement;
@@ -54,17 +53,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_MemberMovement = cpb.create();
         }
         return props_MemberMovement;
-      case LanguageConceptSwitch.Members:
-        if (props_Members == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Members");
-          props_Members = cpb.create();
-        }
-        return props_Members;
       case LanguageConceptSwitch.Movement:
         if (props_Movement == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.rawPresentation("Movement");
           props_Movement = cpb.create();
         }
         return props_Movement;

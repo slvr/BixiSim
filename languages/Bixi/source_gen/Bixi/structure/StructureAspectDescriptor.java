@@ -16,7 +16,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptHorizontalStreet = createDescriptorForHorizontalStreet();
   /*package*/ final ConceptDescriptor myConceptMember = createDescriptorForMember();
   /*package*/ final ConceptDescriptor myConceptMemberMovement = createDescriptorForMemberMovement();
-  /*package*/ final ConceptDescriptor myConceptMembers = createDescriptorForMembers();
   /*package*/ final ConceptDescriptor myConceptMovement = createDescriptorForMovement();
   /*package*/ final ConceptDescriptor myConceptNeighbourhood = createDescriptorForNeighbourhood();
   /*package*/ final ConceptDescriptor myConceptRandomMovement = createDescriptorForRandomMovement();
@@ -31,7 +30,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptBikeRack, myConceptHorizontalStreet, myConceptMember, myConceptMemberMovement, myConceptMembers, myConceptMovement, myConceptNeighbourhood, myConceptRandomMovement, myConceptRedistribution, myConceptStreet, myConceptVerticalStreet);
+    return Arrays.asList(myConceptBikeRack, myConceptHorizontalStreet, myConceptMember, myConceptMemberMovement, myConceptMovement, myConceptNeighbourhood, myConceptRandomMovement, myConceptRedistribution, myConceptStreet, myConceptVerticalStreet);
   }
 
   @Override
@@ -46,8 +45,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptMember;
       case LanguageConceptSwitch.MemberMovement:
         return myConceptMemberMovement;
-      case LanguageConceptSwitch.Members:
-        return myConceptMembers;
       case LanguageConceptSwitch.Movement:
         return myConceptMovement;
       case LanguageConceptSwitch.Neighbourhood:
@@ -108,17 +105,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("member", 0x3663fa1ece76bf19L).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL).optional(false).origin("3919251110962315033").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForMembers() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "Members", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x340c17a299164a23L);
-    b.class_(false, false, true);
-    b.origin("r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3750398576813296163");
-    b.version(2);
-    b.aggregate("members", 0x340c17a299164a24L).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL).optional(true).ordered(true).multiple(true).origin("3750398576813296164").done();
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForMovement() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "Movement", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bf33L);
-    b.class_(false, false, false);
+    b.class_(false, true, false);
     b.origin("r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962315059");
     b.version(2);
     b.prop("dayOfWeek", 0x3663fa1ece76bf4dL, "3919251110962315085");
@@ -133,12 +122,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
-    b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x33d23ee961a0cbf3L);
     b.origin("r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3671010239273888390");
     b.version(2);
-    b.aggregate("horizontalStreets", 0x340c17a299326439L).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x340c17a299323ce9L).optional(true).ordered(true).multiple(true).origin("3750398576815137849").done();
-    b.aggregate("verticalStreets", 0x340c17a299330e0eL).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x340c17a299323ce8L).optional(true).ordered(true).multiple(true).origin("3750398576815181326").done();
+    b.aggregate("streets", 0x340c17a2994dba57L).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL).optional(true).ordered(true).multiple(true).origin("3750398576816929367").done();
     b.aggregate("racks", 0x340c17a29936b255L).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L).optional(true).ordered(true).multiple(true).origin("3750398576815419989").done();
+    b.aggregate("members", 0x340c17a2995353a0L).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL).optional(true).ordered(true).multiple(true).origin("3750398576817296288").done();
+    b.aggregate("mouvement", 0x340c17a2994561fdL).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bf33L).optional(true).ordered(true).multiple(true).origin("3750398576816382461").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRandomMovement() {

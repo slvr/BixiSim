@@ -13,6 +13,7 @@ import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SConceptOperations;
 import jetbrains.mps.smodel.SNodePointer;
 
 public class Neighbourhood_Constraints extends BaseConstraintsDescriptor {
@@ -36,7 +37,7 @@ public class Neighbourhood_Constraints extends BaseConstraintsDescriptor {
     };
   }
   private static boolean staticCanBeAParent(SNode node, SNode childNode, SAbstractConcept childConcept, SContainmentLink link) {
-    return SNodeOperations.isInstanceOf(childNode, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, "Bixi.structure.BikeRack")) || SNodeOperations.isInstanceOf(childNode, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, "Bixi.structure.Street"));
+    return SNodeOperations.isInstanceOf(childNode, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, "Bixi.structure.BikeRack")) || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(childConcept), MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, "Bixi.structure.Street")) || SNodeOperations.isInstanceOf(childNode, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL, "Bixi.structure.Member")) || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(childConcept), MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bf33L, "Bixi.structure.Movement"));
   }
   private static SNodePointer canBeParentBreakingPoint = new SNodePointer("r:e0e61ae0-23de-4e57-9ddf-43be00c8df9c(Bixi.constraints)", "3750398576812642847");
 }

@@ -13,13 +13,12 @@ public final class LanguageConceptSwitch {
   public static final int HorizontalStreet = 1;
   public static final int Member = 2;
   public static final int MemberMovement = 3;
-  public static final int Members = 4;
-  public static final int Movement = 5;
-  public static final int Neighbourhood = 6;
-  public static final int RandomMovement = 7;
-  public static final int Redistribution = 8;
-  public static final int Street = 9;
-  public static final int VerticalStreet = 10;
+  public static final int Movement = 4;
+  public static final int Neighbourhood = 5;
+  public static final int RandomMovement = 6;
+  public static final int Redistribution = 7;
+  public static final int Street = 8;
+  public static final int VerticalStreet = 9;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x80abab196e2b414aL, 0xbf443232f0a94d40L);
@@ -27,7 +26,6 @@ public final class LanguageConceptSwitch {
     builder.put(0x340c17a299323ce9L, HorizontalStreet);
     builder.put(0x3663fa1ece76bc9cL, Member);
     builder.put(0x3663fa1ece76bca1L, MemberMovement);
-    builder.put(0x340c17a299164a23L, Members);
     builder.put(0x3663fa1ece76bf33L, Movement);
     builder.put(0x32f20c5cdebdea86L, Neighbourhood);
     builder.put(0x3663fa1ece76bbd1L, RandomMovement);
