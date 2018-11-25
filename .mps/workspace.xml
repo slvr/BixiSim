@@ -7,8 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="abf87364-8740-4c52-b39f-5a8977217d2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.mps/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/Bixi/Bixi.mpl" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Bixi/Bixi.mpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/Bixi/models/editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/Bixi/models/editor.mps" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,7 +23,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="4fcb8607-f96b-4af9-a19b-dad234158d6d/r:70bfa3ed-6c9d-44ba-aabc-08c7ffe56203(TempModule4fcb8607-f96b-4af9-a19b-dad234158d6d/TempModel_92699402848668)">
+            <model ref="387bf52c-e56b-4bba-b681-33f2e1fe69fd/r:d9bda2d0-63f6-4bb0-a83c-68298a3ab00e(TempModule387bf52c-e56b-4bba-b681-33f2e1fe69fd/TempModel_107535407885872)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -42,11 +43,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="6HOQOEVSSOO">
-                <node concept="3balQm" id="6HOQOEVSSOP" role="aymYE" />
-                <node concept="2Clz$F" id="6HOQOEVSSOQ" role="aymYO" />
-                <node concept="2_V_lH" id="6HOQOEVSSOR" role="1PhJh3">
-                  <ref role="2_V_lI" node="6HOQOEVSSOQ" resolve="CommandHolder" />
+              <node concept="aymSD" id="4Ev7$8vwHgS">
+                <node concept="3balQm" id="4Ev7$8vwHgT" role="aymYE" />
+                <node concept="2Clz$F" id="4Ev7$8vwHgU" role="aymYO" />
+                <node concept="2_V_lH" id="4Ev7$8vwHgV" role="1PhJh3">
+                  <ref role="2_V_lI" node="4Ev7$8vwHgU" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -111,7 +112,11 @@
     <session id="-1928573071">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="BikeRack" value="5" />
+          <entry key="Member" value="1" />
           <entry key="MemberMovement" value="1" />
+          <entry key="Movement" value="1" />
+          <entry key="Neighbourhood" value="1" />
           <entry key="RandomMovement" value="1" />
           <entry key="Redistribution" value="1" />
           <entry key="Street_EditorBuilder_a" value="1" />
@@ -120,7 +125,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="MPS_NODE" value="6" />
+          <entry key="MPS_NODE" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
@@ -134,32 +139,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="mps://node://Bixi/Bixi.structure/BikeRack">
           <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
               <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="47" />
-                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="91" />
+                    <property name="caretXRelative" value="40" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Error_nb4xc9_a">
-                      <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314305" />
+                    <cellInfo cellId="property_text">
+                      <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/5377049749449106130" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
-                <errorMarkers>
-                  <errorMarker text="" propertyCell="false" cellId="Error_nb4xc9_a">
-                    <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314305" />
-                  </errorMarker>
-                </errorMarkers>
+                <errorMarkers />
                 <transactionalProperties />
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/5377049749449106130" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -172,90 +173,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="mps://node://Bixi/Bixi.structure/MemberMovement">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="47" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Error_nb4xc9_a">
-                      <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers>
-                  <errorMarker text="" propertyCell="false" cellId="Error_nb4xc9_a">
-                    <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" />
-                  </errorMarker>
-                </errorMarkers>
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314436" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://Bixi/Bixi.structure/StreetOrientation">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://Bixi/Bixi.structure/Quadrant">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="mps://node://Bixi/Bixi.structure/Neighbourhood">
           <provider selected="true" editor-type-id="MPSFileEditor">
@@ -264,24 +181,20 @@
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="247" />
-                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="99" />
+                    <property name="caretXRelative" value="8" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="property_name">
-                      <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3671010239273888421" />
+                    <cellInfo cellId="property_role">
+                      <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/5377049749449070790" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
-                <errorMarkers>
-                  <errorMarker text="" propertyCell="false" cellId="Error_nb4xc9_a">
-                    <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3671010239273888422" />
-                  </errorMarker>
-                </errorMarkers>
+                <errorMarkers />
                 <transactionalProperties />
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/5377049749449106130" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -295,31 +208,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://Bixi/Bixi.structure/RandomMovement">
+        <entry file="mps://node://Bixi/Bixi.structure/Movement">
           <provider selected="true" editor-type-id="MPSFileEditor">
             <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
               <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack>
                   <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
                     <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="47" />
-                    <property name="caretXRelative" value="0" />
+                    <property name="caretX" value="71" />
+                    <property name="caretXRelative" value="56" />
                     <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Error_nb4xc9_a">
-                      <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314315" />
+                    <cellInfo cellId="Constant_ueqr71_c0a">
+                      <node node_reference="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962315059" />
                     </cellInfo>
                   </stackElement>
                 </selectionStack>
-                <errorMarkers>
-                  <errorMarker text="" propertyCell="false" cellId="Error_nb4xc9_a">
-                    <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314315" />
-                  </errorMarker>
-                </errorMarkers>
+                <errorMarkers />
                 <transactionalProperties />
                 <foldable />
                 <restoreAlways />
               </memento>
-              <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+              <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/5377049749449106130" saveSessionState="false" viewPositionX="0" viewPositionY="0">
                 <selectionStack />
                 <errorMarkers />
                 <transactionalProperties />
@@ -327,83 +236,7 @@
                 <restoreAlways />
                 <enabledHints />
               </inspectorMemento>
-              <node node_ref="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314314" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://Bixi/Bixi.structure/Redistribution">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="47" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Error_nb4xc9_a">
-                      <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314325" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers>
-                  <errorMarker text="" propertyCell="false" cellId="Error_nb4xc9_a">
-                    <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314325" />
-                  </errorMarker>
-                </errorMarkers>
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314324" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="mps://node://Bixi/Bixi.structure/Street">
-          <provider selected="true" editor-type-id="MPSFileEditor">
-            <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-              <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack>
-                  <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                    <property name="hasNonTrivialSelection" value="false" />
-                    <property name="caretX" value="47" />
-                    <property name="caretXRelative" value="0" />
-                    <property name="sideSelectDirection" value="NONE" />
-                    <cellInfo cellId="Error_nb4xc9_a">
-                      <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314335" />
-                    </cellInfo>
-                  </stackElement>
-                </selectionStack>
-                <errorMarkers>
-                  <errorMarker text="" propertyCell="false" cellId="Error_nb4xc9_a">
-                    <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314335" />
-                  </errorMarker>
-                </errorMarkers>
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-              </memento>
-              <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-                <selectionStack />
-                <errorMarkers />
-                <transactionalProperties />
-                <foldable />
-                <restoreAlways />
-                <enabledHints />
-              </inspectorMemento>
-              <node node_ref="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314334" />
+              <node node_ref="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962315059" />
             </state>
           </provider>
         </entry>
@@ -497,8 +330,16 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystem" />
+      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
@@ -524,68 +365,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Bixi#01" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="01cff0ff-4838-47fc-82ec-b6d35d64789c" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Bixi" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:9d57f8ce-d779-4da0-8163-8632ec4e1015(Bixi.sandbox) in IdeaFile[file://C:/Users/mushf/Desktop/ECSE 539/Assignments/Assignment 3/BixiSim/languages/Bixi/sandbox/models/Bixi.sandbox.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="80abab19-6e2b-414a-bf44-3232f0a94d40(Bixi)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d8be7664-4736-4269-a4ff-2c451e8f8a7f(Bixi.typesystem) in IdeaFile[file://C:/Users/mushf/Desktop/ECSE 539/Assignments/Assignment 3/BixiSim/languages/Bixi/models/typesystem.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="80abab19-6e2b-414a-bf44-3232f0a94d40(Bixi)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:ebef3725-badf-45bd-9b2b-fed395c20da9(Bixi.behavior) in IdeaFile[file://C:/Users/mushf/Desktop/ECSE 539/Assignments/Assignment 3/BixiSim/languages/Bixi/models/behavior.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="80abab19-6e2b-414a-bf44-3232f0a94d40(Bixi)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -613,20 +392,6 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="80abab19-6e2b-414a-bf44-3232f0a94d40(Bixi)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure) in IdeaFile[file://C:/Users/mushf/Desktop/ECSE 539/Assignments/Assignment 3/BixiSim/languages/Bixi/models/structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Project" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="01cff0ff-4838-47fc-82ec-b6d35d64789c" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
@@ -645,6 +410,72 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="80abab19-6e2b-414a-bf44-3232f0a94d40(Bixi)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:d8be7664-4736-4269-a4ff-2c451e8f8a7f(Bixi.typesystem) in IdeaFile[file://C:/Users/mushf/Desktop/ECSE 539/Assignments/Assignment 3/BixiSim/languages/Bixi/models/typesystem.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="80abab19-6e2b-414a-bf44-3232f0a94d40(Bixi)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="80abab19-6e2b-414a-bf44-3232f0a94d40(Bixi)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure) in IdeaFile[file://C:/Users/mushf/Desktop/ECSE 539/Assignments/Assignment 3/BixiSim/languages/Bixi/models/structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="80abab19-6e2b-414a-bf44-3232f0a94d40(Bixi)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:e0e61ae0-23de-4e57-9ddf-43be00c8df9c(Bixi.constraints) in IdeaFile[file://C:/Users/mushf/Desktop/ECSE 539/Assignments/Assignment 3/BixiSim/languages/Bixi/models/constraints.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Project" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="80abab19-6e2b-414a-bf44-3232f0a94d40(Bixi)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:ebef3725-badf-45bd-9b2b-fed395c20da9(Bixi.behavior) in IdeaFile[file://C:/Users/mushf/Desktop/ECSE 539/Assignments/Assignment 3/BixiSim/languages/Bixi/models/behavior.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
           <SELECTED>
             <PATH_ELEMENT>
               <option name="myItemId" value="Project" />
@@ -655,19 +486,21 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor) in IdeaFile[file://C:/Users/mushf/Desktop/ECSE 539/Assignments/Assignment 3/BixiSim/languages/Bixi/models/editor.mps]" />
+              <option name="myItemId" value="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure) in IdeaFile[file://C:/Users/mushf/Desktop/ECSE 539/Assignments/Assignment 3/BixiSim/languages/Bixi/models/structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="3919251110962314304" />
+              <option name="myItemId" value="3671010239273892689" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>
         </subPane>
       </pane>
-      <pane id="FileSystem" />
-      <pane id="Favorites" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../BixiSim" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Ignored.Files" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -682,12 +515,13 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\mushf\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26586434" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3380744" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -701,7 +535,7 @@
       <window_info anchor="bottom" id="Migration" order="9" />
       <window_info anchor="bottom" id="Menu Trace" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" visible="true" weight="0.20213903" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5010941" side_tool="true" weight="0.23315509" />
       <window_info anchor="bottom" id="Classpath Explorer" order="13" />
       <window_info anchor="bottom" id="Usages" order="14" />
       <window_info anchor="bottom" id="Node Explorer" order="15" />
@@ -709,11 +543,11 @@
       <window_info anchor="bottom" id="Version Control" order="17" show_stripe_button="false" />
       <window_info anchor="bottom" id="Generation Tracer" order="18" />
       <window_info anchor="bottom" id="Cell Explorer" order="19" />
-      <window_info anchor="bottom" id="Messages" order="20" weight="0.2309322" />
+      <window_info anchor="bottom" id="Messages" order="20" sideWeight="0.49781182" visible="true" weight="0.23315509" />
       <window_info anchor="bottom" id="Typechecker State" order="21" />
       <window_info anchor="bottom" id="Console" order="22" />
       <window_info anchor="bottom" id="RefactoringView" order="23" />
-      <window_info anchor="bottom" id="Inspector" order="24" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Inspector" order="24" sideWeight="0.5021882" side_tool="true" visible="true" weight="0.23315509" />
       <window_info anchor="bottom" id="Dependencies Viewer" order="25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -777,9 +611,7 @@
     <entry file="mps://node://Bixi/Bixi.structure/WeekDay" />
     <entry file="mps://node://Bixi/Bixi.structure/TimeSlot" />
     <entry file="mps://node://Bixi/Bixi.structure/&lt;no name&gt;[ConceptDeclaration]" />
-    <entry file="mps://node://Bixi/Bixi.structure/Movement" />
     <entry file="mps://node://Bixi/Bixi.structure/Transition" />
-    <entry file="mps://node://Bixi/Bixi.structure/Member" />
     <entry file="mps://node://Bixi@transient32/Bixi.editor@0/Street_EditorBuilder_a" />
     <entry file="mps://node://Bixi#01/main@generator/main">
       <provider selected="true" editor-type-id="MPSFileEditor">
@@ -818,120 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="mps://node://Bixi/Bixi.structure/BikeRack">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="47" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="Error_nb4xc9_a">
-                  <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314305" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="false" cellId="Error_nb4xc9_a">
-                <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314305" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314304" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://Bixi/Bixi.structure/StreetOrientation">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://Bixi/Bixi.structure/Quadrant">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-        </state>
-      </provider>
-    </entry>
-    <entry file="mps://node://Bixi/Bixi.structure/Neighbourhood">
-      <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
-          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack>
-              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
-                <property name="hasNonTrivialSelection" value="false" />
-                <property name="caretX" value="247" />
-                <property name="caretXRelative" value="0" />
-                <property name="sideSelectDirection" value="NONE" />
-                <cellInfo cellId="property_name">
-                  <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3671010239273888421" />
-                </cellInfo>
-              </stackElement>
-            </selectionStack>
-            <errorMarkers>
-              <errorMarker text="" propertyCell="false" cellId="Error_nb4xc9_a">
-                <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3671010239273888422" />
-              </errorMarker>
-            </errorMarkers>
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-          </memento>
-          <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
-            <selectionStack />
-            <errorMarkers />
-            <transactionalProperties />
-            <foldable />
-            <restoreAlways />
-            <enabledHints />
-          </inspectorMemento>
-          <node node_ref="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3671010239273888421" />
-        </state>
-      </provider>
-    </entry>
     <entry file="mps://node://Bixi/Bixi.structure/RandomMovement">
       <provider selected="true" editor-type-id="MPSFileEditor">
         <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
@@ -956,7 +674,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314315" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -992,7 +710,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314325" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1028,7 +746,7 @@
             <foldable />
             <restoreAlways />
           </memento>
-          <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314437" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+          <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314335" saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack />
             <errorMarkers />
             <transactionalProperties />
@@ -1042,7 +760,7 @@
     </entry>
     <entry file="mps://node://Bixi/Bixi.structure/MemberMovement">
       <provider selected="true" editor-type-id="MPSFileEditor">
-        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
           <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
             <selectionStack>
               <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
@@ -1073,6 +791,196 @@
             <enabledHints />
           </inspectorMemento>
           <node node_ref="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314436" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Bixi/Bixi.structure/StreetOrientation">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="183" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3671010239273888516" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3671010239273888516" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Bixi/Bixi.structure/Quadrant">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.BaseNodeEditor$BaseEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="183" />
+                <property name="caretXRelative" value="0" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_name">
+                  <node node_reference="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3671010239273892711" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3671010239273892711" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Bixi/Bixi.structure/Member">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962314396" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962314396" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962314396" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Bixi/Bixi.structure/Movement">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="71" />
+                <property name="caretXRelative" value="56" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="Constant_ueqr71_c0a">
+                  <node node_reference="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962315059" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/5377049749449106130" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962315059" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Bixi/Bixi.structure/Neighbourhood">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="99" />
+                <property name="caretXRelative" value="8" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_role">
+                  <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/5377049749449070790" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/5377049749449106130" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3671010239273888421" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="mps://node://Bixi/Bixi.structure/BikeRack">
+      <provider selected="true" editor-type-id="MPSFileEditor">
+        <state class="jetbrains.mps.ide.editor.tabs.TabbedEditor$TabbedEditorState" editorFocused="true">
+          <memento saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack>
+              <stackElement className="jetbrains.mps.nodeEditor.selection.EditorCellLabelSelection">
+                <property name="hasNonTrivialSelection" value="false" />
+                <property name="caretX" value="91" />
+                <property name="caretXRelative" value="40" />
+                <property name="sideSelectDirection" value="NONE" />
+                <cellInfo cellId="property_text">
+                  <node node_reference="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/5377049749449106130" />
+                </cellInfo>
+              </stackElement>
+            </selectionStack>
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+          </memento>
+          <inspectorMemento currentlyEditedNode="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/5377049749449106130" saveSessionState="false" viewPositionX="0" viewPositionY="0">
+            <selectionStack />
+            <errorMarkers />
+            <transactionalProperties />
+            <foldable />
+            <restoreAlways />
+            <enabledHints />
+          </inspectorMemento>
+          <node node_ref="r:d658084d-94a5-4851-9ddd-db5cb6b2328e(Bixi.editor)/3919251110962314304" />
         </state>
       </provider>
     </entry>
