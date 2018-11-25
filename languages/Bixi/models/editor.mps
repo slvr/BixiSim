@@ -17,6 +17,7 @@
       </concept>
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
+      <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
@@ -33,7 +34,6 @@
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
-      <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0" />
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
@@ -154,11 +154,123 @@
   </node>
   <node concept="24kQdi" id="3pzYxVetFLa">
     <ref role="1XX52x" to="6gk1:3pzYxVetFJh" resolve="RandomMovement" />
-    <node concept="3EYTF0" id="3pzYxVetFLb" role="2wV5jI" />
+    <node concept="3EZMnI" id="4Ev7$8vx6T6" role="2wV5jI">
+      <node concept="3F0ifn" id="4Ev7$8vx6W$" role="3EZMnx">
+        <property role="3F0ifm" value="Source Rack = " />
+      </node>
+      <node concept="1iCGBv" id="4Ev7$8vx6Tg" role="3EZMnx">
+        <ref role="1NtTu8" to="6gk1:3pzYxVetFXs" resolve="sourceRack" />
+        <node concept="1sVBvm" id="4Ev7$8vx6Ti" role="1sWHZn">
+          <node concept="3F0A7n" id="4Ev7$8vx6Ts" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4Ev7$8vx6Xh" role="3EZMnx">
+        <property role="3F0ifm" value="Target Rack = " />
+        <node concept="pVoyu" id="4Ev7$8vx6XD" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="4Ev7$8vx6TD" role="3EZMnx">
+        <ref role="1NtTu8" to="6gk1:3pzYxVetFXv" resolve="targetRack" />
+        <node concept="1sVBvm" id="4Ev7$8vx6TF" role="1sWHZn">
+          <node concept="3F0A7n" id="4Ev7$8vx6TV" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4Ev7$8vx6Y7" role="3EZMnx">
+        <property role="3F0ifm" value="Day of Week = " />
+        <node concept="pVoyu" id="4Ev7$8vx6Yz" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4Ev7$8vx6Ue" role="3EZMnx">
+        <ref role="1NtTu8" to="6gk1:3pzYxVetFXd" resolve="dayOfWeek" />
+      </node>
+      <node concept="3F0ifn" id="4Ev7$8vx6Z5" role="3EZMnx">
+        <property role="3F0ifm" value="Number of Bikes = " />
+        <node concept="pVoyu" id="4Ev7$8vx6Z_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4Ev7$8vx6UJ" role="3EZMnx">
+        <ref role="1NtTu8" to="6gk1:3pzYxVetFXl" resolve="numberOfBikes" />
+      </node>
+      <node concept="3F0ifn" id="4Ev7$8vx70b" role="3EZMnx">
+        <property role="3F0ifm" value="Time Slot = " />
+        <node concept="pVoyu" id="4Ev7$8vx70J" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4Ev7$8vx6Vk" role="3EZMnx">
+        <ref role="1NtTu8" to="6gk1:3pzYxVetFXg" resolve="timeSlot" />
+      </node>
+      <node concept="l2Vlx" id="4Ev7$8vx6T9" role="2iSdaV" />
+    </node>
   </node>
   <node concept="24kQdi" id="3pzYxVetFLk">
     <ref role="1XX52x" to="6gk1:3pzYxVetFJi" resolve="Redistribution" />
-    <node concept="3EYTF0" id="3pzYxVetFLl" role="2wV5jI" />
+    <node concept="3EZMnI" id="4Ev7$8vx70M" role="2wV5jI">
+      <node concept="3F0ifn" id="4Ev7$8vx74m" role="3EZMnx">
+        <property role="3F0ifm" value="Source Rack = " />
+      </node>
+      <node concept="1iCGBv" id="4Ev7$8vx70W" role="3EZMnx">
+        <ref role="1NtTu8" to="6gk1:3pzYxVetFXs" resolve="sourceRack" />
+        <node concept="1sVBvm" id="4Ev7$8vx70Y" role="1sWHZn">
+          <node concept="3F0A7n" id="4Ev7$8vx718" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4Ev7$8vx753" role="3EZMnx">
+        <property role="3F0ifm" value="Target Rack = " />
+        <node concept="pVoyu" id="4Ev7$8vx75r" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="4Ev7$8vx71l" role="3EZMnx">
+        <ref role="1NtTu8" to="6gk1:3pzYxVetFXv" resolve="targetRack" />
+        <node concept="1sVBvm" id="4Ev7$8vx71n" role="1sWHZn">
+          <node concept="3F0A7n" id="4Ev7$8vx71H" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4Ev7$8vx75T" role="3EZMnx">
+        <property role="3F0ifm" value="Day of Week = " />
+        <node concept="pVoyu" id="4Ev7$8vx76l" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4Ev7$8vx720" role="3EZMnx">
+        <ref role="1NtTu8" to="6gk1:3pzYxVetFXd" resolve="dayOfWeek" />
+      </node>
+      <node concept="3F0ifn" id="4Ev7$8vx76R" role="3EZMnx">
+        <property role="3F0ifm" value="Number of Bikes = " />
+        <node concept="pVoyu" id="4Ev7$8vx77n" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4Ev7$8vx72x" role="3EZMnx">
+        <ref role="1NtTu8" to="6gk1:3pzYxVetFXl" resolve="numberOfBikes" />
+      </node>
+      <node concept="3F0ifn" id="4Ev7$8vx77X" role="3EZMnx">
+        <property role="3F0ifm" value="Time Slot = " />
+        <node concept="pVoyu" id="4Ev7$8vx78x" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4Ev7$8vx736" role="3EZMnx">
+        <ref role="1NtTu8" to="6gk1:3pzYxVetFXg" resolve="timeSlot" />
+      </node>
+      <node concept="l2Vlx" id="4Ev7$8vx70P" role="2iSdaV" />
+    </node>
   </node>
   <node concept="24kQdi" id="3pzYxVetFLu">
     <ref role="1XX52x" to="6gk1:3bM35NuJuFV" resolve="Street" />
@@ -207,7 +319,93 @@
   </node>
   <node concept="24kQdi" id="3pzYxVetFN4">
     <ref role="1XX52x" to="6gk1:3pzYxVetFMx" resolve="MemberMovement" />
-    <node concept="3EYTF0" id="3pzYxVetFN5" role="2wV5jI" />
+    <node concept="3EZMnI" id="4Ev7$8vx6v5" role="2wV5jI">
+      <node concept="3F0ifn" id="4Ev7$8vx6y3" role="3EZMnx">
+        <property role="3F0ifm" value="Member" />
+      </node>
+      <node concept="3EZMnI" id="4Ev7$8vx6yG" role="3EZMnx">
+        <node concept="3F0ifn" id="4Ev7$8vx6zP" role="3EZMnx">
+          <property role="3F0ifm" value="Name = " />
+          <node concept="pVoyu" id="4Ev7$8vx6zZ" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="4Ev7$8vx6_y" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="VPM3Z" id="4Ev7$8vx6yI" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="1iCGBv" id="4Ev7$8vx6zd" role="3EZMnx">
+          <ref role="1NtTu8" to="6gk1:3pzYxVetFWp" resolve="member" />
+          <node concept="1sVBvm" id="4Ev7$8vx6zf" role="1sWHZn">
+            <node concept="3F0A7n" id="4Ev7$8vx6zp" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="4Ev7$8vx6AB" role="3EZMnx">
+          <property role="3F0ifm" value="ID = " />
+          <node concept="pVoyu" id="4Ev7$8vx6AX" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="4Ev7$8vx6B0" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="1iCGBv" id="4Ev7$8vx6_Q" role="3EZMnx">
+          <ref role="1NtTu8" to="6gk1:3pzYxVetFWp" resolve="member" />
+          <node concept="1sVBvm" id="4Ev7$8vx6_S" role="1sWHZn">
+            <node concept="3F0A7n" id="4Ev7$8vx6Ae" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="6gk1:3pzYxVetFXX" resolve="ID" />
+            </node>
+          </node>
+        </node>
+        <node concept="l2Vlx" id="4Ev7$8vx6yL" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="4Ev7$8vx6EF" role="3EZMnx">
+        <property role="3F0ifm" value="Source Rack = " />
+      </node>
+      <node concept="1iCGBv" id="4Ev7$8vx6D2" role="3EZMnx">
+        <ref role="1NtTu8" to="6gk1:3pzYxVetFXs" resolve="sourceRack" />
+        <node concept="1sVBvm" id="4Ev7$8vx6D4" role="1sWHZn">
+          <node concept="3F0A7n" id="4Ev7$8vx6DQ" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="4Ev7$8vx6Jx" role="3EZMnx">
+        <property role="3F0ifm" value="Day of Week = " />
+        <node concept="pVoyu" id="4Ev7$8vx6Kl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4Ev7$8vx6vf" role="3EZMnx">
+        <ref role="1NtTu8" to="6gk1:3pzYxVetFXd" resolve="dayOfWeek" />
+      </node>
+      <node concept="3F0ifn" id="4Ev7$8vx6Lf" role="3EZMnx">
+        <property role="3F0ifm" value="Number of Bikes = " />
+        <node concept="pVoyu" id="4Ev7$8vx6M7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4Ev7$8vx6vo" role="3EZMnx">
+        <ref role="1NtTu8" to="6gk1:3pzYxVetFXl" resolve="numberOfBikes" />
+      </node>
+      <node concept="3F0ifn" id="4Ev7$8vx6P1" role="3EZMnx">
+        <property role="3F0ifm" value="Time Slot = " />
+        <node concept="pVoyu" id="4Ev7$8vx6PY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4Ev7$8vx6v_" role="3EZMnx">
+        <ref role="1NtTu8" to="6gk1:3pzYxVetFXg" resolve="timeSlot" />
+      </node>
+      <node concept="l2Vlx" id="4Ev7$8vx6v8" role="2iSdaV" />
+    </node>
   </node>
   <node concept="24kQdi" id="4Ev7$8vx6sF">
     <ref role="1XX52x" to="6gk1:3pzYxVetFMs" resolve="Member" />
