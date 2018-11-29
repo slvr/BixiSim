@@ -7,7 +7,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class Redistribution_Constraints extends BaseConstraintsDescriptor {
   public Redistribution_Constraints() {
-    super(MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bbd2L, "Bixi.structure.Redistribution"));
+    super(MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696809L, "Bixi.structure.Redistribution"));
   }
 
 }

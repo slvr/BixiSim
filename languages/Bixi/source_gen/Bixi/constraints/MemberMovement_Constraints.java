@@ -15,13 +15,13 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 
 public class MemberMovement_Constraints extends BaseConstraintsDescriptor {
   public MemberMovement_Constraints() {
-    super(MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bca1L, "Bixi.structure.MemberMovement"));
+    super(MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696803L, "Bixi.structure.MemberMovement"));
   }
 
   @Override
   protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
     Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bf33L, 0x3663fa1ece76bf55L, "numberOfBikes"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bf33L, 0x3663fa1ece76bf55L), this) {
+    properties.put(MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696804L, 0x6be7fb71e269682bL, "numberOfBikes"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696804L, 0x6be7fb71e269682bL), this) {
       @Override
       public boolean hasOwnValidator() {
         return true;

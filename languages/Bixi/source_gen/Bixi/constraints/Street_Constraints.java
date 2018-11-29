@@ -24,7 +24,7 @@ import jetbrains.mps.smodel.SNodePointer;
 
 public class Street_Constraints extends BaseConstraintsDescriptor {
   public Street_Constraints() {
-    super(MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, "Bixi.structure.Street"));
+    super(MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, "Bixi.structure.Street"));
   }
 
   @Override
@@ -45,7 +45,7 @@ public class Street_Constraints extends BaseConstraintsDescriptor {
   @Override
   protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
     Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb29L, "placement"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb29L), this) {
+    properties.put(MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686dL, "placement"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686dL), this) {
       @Override
       public boolean hasOwnValidator() {
         return true;
@@ -56,7 +56,7 @@ public class Street_Constraints extends BaseConstraintsDescriptor {
         return (SPropertyOperations.getInteger(propertyValue)) > 0 && (SPropertyOperations.getInteger(propertyValue)) < 100;
       }
     });
-    properties.put(MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdeb11L, "lowerLimit"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdeb11L), this) {
+    properties.put(MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e2696868L, "lowerLimit"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e2696868L), this) {
       @Override
       public boolean hasOwnValidator() {
         return true;
@@ -67,7 +67,7 @@ public class Street_Constraints extends BaseConstraintsDescriptor {
         return (SPropertyOperations.getInteger(propertyValue)) >= 0 && (SPropertyOperations.getInteger(propertyValue)) <= 99;
       }
     });
-    properties.put(MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb1fL, "upperLimit"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb1fL), this) {
+    properties.put(MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686aL, "upperLimit"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686aL), this) {
       @Override
       public boolean hasOwnValidator() {
         return true;
@@ -75,13 +75,13 @@ public class Street_Constraints extends BaseConstraintsDescriptor {
       @Override
       public boolean validateValue(SNode node, String propertyValue) {
         String propertyName = "upperLimit";
-        return (SPropertyOperations.getInteger(propertyValue)) >= 1 && (SPropertyOperations.getInteger(propertyValue)) <= 100 && (SPropertyOperations.getInteger(propertyValue)) > SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdeb11L, "lowerLimit"));
+        return (SPropertyOperations.getInteger(propertyValue)) >= 1 && (SPropertyOperations.getInteger(propertyValue)) <= 100 && (SPropertyOperations.getInteger(propertyValue)) > SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e2696868L, "lowerLimit"));
       }
     });
     return properties;
   }
   private static boolean staticCanBeAChild(SNode node, SNode parentNode, SAbstractConcept childConcept, SContainmentLink link) {
-    return SNodeOperations.isInstanceOf(parentNode, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, "Bixi.structure.Neighbourhood"));
+    return SNodeOperations.isInstanceOf(parentNode, MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696805L, "Bixi.structure.Neighbourhood"));
   }
-  private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:e0e61ae0-23de-4e57-9ddf-43be00c8df9c(Bixi.constraints)", "3750398576812689758");
+  private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:523c7c62-7bf2-439d-8b6f-b8ba789d797b(Bixi.constraints)", "7775459748227424319");
 }

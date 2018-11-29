@@ -11,6 +11,7 @@ import org.jetbrains.mps.openapi.persistence.PersistenceFacade;
 import main.QueriesGenerated;
 import java.util.Collection;
 import org.jetbrains.mps.openapi.language.SLanguage;
+import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import java.util.Arrays;
 
 public class Generator extends TemplateModuleInterpreted2 {
@@ -22,18 +23,20 @@ public class Generator extends TemplateModuleInterpreted2 {
   @NotNull
   @Override
   public SModuleReference getModuleReference() {
-    return PersistenceFacade.getInstance().createModuleReference("f4118d78-575f-4ef2-9ee7-cf624936e3e7(Bixi#01)");
+    return PersistenceFacade.getInstance().createModuleReference("08f12c97-5c9b-4e51-9b4a-022e5d731be1(Bixi#01)");
   }
 
   @Override
   protected void fillTemplateModels(TemplateModuleInterpreted2.TemplateModels models) {
-    models.templates("r:90fa0f34-64bc-43a5-a16f-7e3d06cc4088", QueriesGenerated.class);
+    models.templates("r:5f68f15a-9bd1-4026-8e0d-0eecf5e44148", QueriesGenerated.class);
   }
 
 
   @Override
   public Collection<SLanguage> getTargetLanguages() {
-    SLanguage[] rv = new SLanguage[0];
+    SLanguage[] rv = new SLanguage[2];
+    rv[0] = MetaAdapterFactory.getLanguage(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, "jetbrains.mps.baseLanguage");
+    rv[1] = MetaAdapterFactory.getLanguage(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, "jetbrains.mps.lang.core");
     return Arrays.asList(rv);
   }
 

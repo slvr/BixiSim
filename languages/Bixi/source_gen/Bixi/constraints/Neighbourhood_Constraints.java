@@ -18,7 +18,7 @@ import jetbrains.mps.smodel.SNodePointer;
 
 public class Neighbourhood_Constraints extends BaseConstraintsDescriptor {
   public Neighbourhood_Constraints() {
-    super(MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, "Bixi.structure.Neighbourhood"));
+    super(MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696805L, "Bixi.structure.Neighbourhood"));
   }
 
   @Override
@@ -37,7 +37,7 @@ public class Neighbourhood_Constraints extends BaseConstraintsDescriptor {
     };
   }
   private static boolean staticCanBeAParent(SNode node, SNode childNode, SAbstractConcept childConcept, SContainmentLink link) {
-    return SNodeOperations.isInstanceOf(childNode, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, "Bixi.structure.BikeRack")) || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(childConcept), MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, "Bixi.structure.Street")) || SNodeOperations.isInstanceOf(childNode, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL, "Bixi.structure.Member")) || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(childConcept), MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bf33L, "Bixi.structure.Movement"));
+    return SNodeOperations.isInstanceOf(childNode, MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, "Bixi.structure.BikeRack")) || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(childConcept), MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, "Bixi.structure.Street")) || SNodeOperations.isInstanceOf(childNode, MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696802L, "Bixi.structure.Member")) || SConceptOperations.isSubConceptOf(SNodeOperations.asSConcept(childConcept), MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696804L, "Bixi.structure.Movement"));
   }
-  private static SNodePointer canBeParentBreakingPoint = new SNodePointer("r:e0e61ae0-23de-4e57-9ddf-43be00c8df9c(Bixi.constraints)", "3750398576812642847");
+  private static SNodePointer canBeParentBreakingPoint = new SNodePointer("r:523c7c62-7bf2-439d-8b6f-b8ba789d797b(Bixi.constraints)", "7775459748227388700");
 }

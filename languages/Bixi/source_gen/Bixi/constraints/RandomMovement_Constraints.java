@@ -7,7 +7,7 @@ import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
 public class RandomMovement_Constraints extends BaseConstraintsDescriptor {
   public RandomMovement_Constraints() {
-    super(MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bbd1L, "Bixi.structure.RandomMovement"));
+    super(MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696808L, "Bixi.structure.RandomMovement"));
   }
 
 }

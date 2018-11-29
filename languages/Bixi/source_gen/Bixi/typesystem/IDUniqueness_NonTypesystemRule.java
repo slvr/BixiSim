@@ -24,24 +24,24 @@ public class IDUniqueness_NonTypesystemRule extends AbstractNonTypesystemRule_Ru
   public IDUniqueness_NonTypesystemRule() {
   }
   public void applyRule(final SNode member, final TypeCheckingContext typeCheckingContext, IsApplicableStatus status) {
-    Iterable<Integer> memberIds = ListSequence.fromList(SModelOperations.roots(SNodeOperations.getModel(member), MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL, "Bixi.structure.Member"))).select(new ISelector<SNode, Integer>() {
+    Iterable<Integer> memberIDs = ListSequence.fromList(SModelOperations.roots(SNodeOperations.getModel(member), MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696802L, "Bixi.structure.Member"))).select(new ISelector<SNode, Integer>() {
       public Integer select(SNode it) {
-        return SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL, 0x3663fa1ece76bf7dL, "ID"));
+        return SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696802L, 0x6be7fb71e2696822L, "ID"));
       }
     });
-    if (Sequence.fromIterable(memberIds).where(new IWhereFilter<Integer>() {
+    if (Sequence.fromIterable(memberIDs).where(new IWhereFilter<Integer>() {
       public boolean accept(Integer it) {
-        return it == SPropertyOperations.getInteger(member, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL, 0x3663fa1ece76bf7dL, "ID"));
+        return it == SPropertyOperations.getInteger(member, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696802L, 0x6be7fb71e2696822L, "ID"));
       }
     }).count() > 1) {
       {
         MessageTarget errorTarget = new NodeMessageTarget();
-        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(member, "Member ID must be unique", "r:d8be7664-4736-4269-a4ff-2c451e8f8a7f(Bixi.typesystem)", "1904811872814168242", null, errorTarget);
+        IErrorReporter _reporter_2309309498 = typeCheckingContext.reportTypeError(member, "Member ID must be unique", "r:79b1af98-e8af-4bb3-b890-7080d1ac3540(Bixi.typesystem)", "7775459748227560884", null, errorTarget);
       }
     }
   }
   public SAbstractConcept getApplicableConcept() {
-    return MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL, "Bixi.structure.Member");
+    return MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696802L, "Bixi.structure.Member");
   }
   public IsApplicableStatus isApplicableAndPattern(SNode argument) {
     return new IsApplicableStatus(argument.getConcept().isSubConceptOf(getApplicableConcept()), null);

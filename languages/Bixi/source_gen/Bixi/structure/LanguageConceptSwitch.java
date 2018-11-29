@@ -21,17 +21,17 @@ public final class LanguageConceptSwitch {
   public static final int VerticalStreet = 9;
 
   public LanguageConceptSwitch() {
-    LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x80abab196e2b414aL, 0xbf443232f0a94d40L);
-    builder.put(0x32f20c5cdebdfb51L, BikeRack);
-    builder.put(0x340c17a299323ce9L, HorizontalStreet);
-    builder.put(0x3663fa1ece76bc9cL, Member);
-    builder.put(0x3663fa1ece76bca1L, MemberMovement);
-    builder.put(0x3663fa1ece76bf33L, Movement);
-    builder.put(0x32f20c5cdebdea86L, Neighbourhood);
-    builder.put(0x3663fa1ece76bbd1L, RandomMovement);
-    builder.put(0x3663fa1ece76bbd2L, Redistribution);
-    builder.put(0x32f20c5cdebdeafbL, Street);
-    builder.put(0x340c17a299323ce8L, VerticalStreet);
+    LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L);
+    builder.put(0x6be7fb71e2696800L, BikeRack);
+    builder.put(0x6be7fb71e2696801L, HorizontalStreet);
+    builder.put(0x6be7fb71e2696802L, Member);
+    builder.put(0x6be7fb71e2696803L, MemberMovement);
+    builder.put(0x6be7fb71e2696804L, Movement);
+    builder.put(0x6be7fb71e2696805L, Neighbourhood);
+    builder.put(0x6be7fb71e2696808L, RandomMovement);
+    builder.put(0x6be7fb71e2696809L, Redistribution);
+    builder.put(0x6be7fb71e269680aL, Street);
+    builder.put(0x6be7fb71e269680bL, VerticalStreet);
     myIndex = builder.seal();
   }
 

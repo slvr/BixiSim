@@ -7,36 +7,36 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.LinkedList;
 
 public enum TimeSlot {
-  _0_4("Night", "0-4"),
-  _4_8("Early Morning", "4-8"),
-  _8_12("Morning", "8-12"),
-  _12_16("Midday", "12-16"),
-  _16_20("Afternoon", "16-20"),
-  _20_0("Evening", "20-0");
+  _0("Night", 0),
+  _4("Early Morning", 4),
+  _8("Morning", 8),
+  _12("Midday", 12),
+  _16("Afternoon", 16),
+  _20("Evening", 20);
 
   private final String myName;
   public String getName() {
     return myName;
   }
-  private final String myValue;
-  private TimeSlot(String name, String value) {
+  private final int myValue;
+  TimeSlot(String name, int value) {
     myName = name;
     myValue = value;
   }
-  public String getValue() {
+  public int getValue() {
     return myValue;
   }
   public String getValueAsString() {
-    return myValue;
+    return Integer.toString(myValue);
   }
   public static List<TimeSlot> getConstants() {
     List<TimeSlot> list = ListSequence.fromList(new LinkedList<TimeSlot>());
-    ListSequence.fromList(list).addElement(TimeSlot._0_4);
-    ListSequence.fromList(list).addElement(TimeSlot._4_8);
-    ListSequence.fromList(list).addElement(TimeSlot._8_12);
-    ListSequence.fromList(list).addElement(TimeSlot._12_16);
-    ListSequence.fromList(list).addElement(TimeSlot._16_20);
-    ListSequence.fromList(list).addElement(TimeSlot._20_0);
+    ListSequence.fromList(list).addElement(TimeSlot._0);
+    ListSequence.fromList(list).addElement(TimeSlot._4);
+    ListSequence.fromList(list).addElement(TimeSlot._8);
+    ListSequence.fromList(list).addElement(TimeSlot._12);
+    ListSequence.fromList(list).addElement(TimeSlot._16);
+    ListSequence.fromList(list).addElement(TimeSlot._20);
     return list;
   }
   public static TimeSlot getDefault() {
@@ -46,23 +46,23 @@ public enum TimeSlot {
     if (value == null) {
       return TimeSlot.getDefault();
     }
-    if (value.equals(TimeSlot._0_4.getValueAsString())) {
-      return TimeSlot._0_4;
+    if (value.equals(TimeSlot._0.getValueAsString())) {
+      return TimeSlot._0;
     }
-    if (value.equals(TimeSlot._4_8.getValueAsString())) {
-      return TimeSlot._4_8;
+    if (value.equals(TimeSlot._4.getValueAsString())) {
+      return TimeSlot._4;
     }
-    if (value.equals(TimeSlot._8_12.getValueAsString())) {
-      return TimeSlot._8_12;
+    if (value.equals(TimeSlot._8.getValueAsString())) {
+      return TimeSlot._8;
     }
-    if (value.equals(TimeSlot._12_16.getValueAsString())) {
-      return TimeSlot._12_16;
+    if (value.equals(TimeSlot._12.getValueAsString())) {
+      return TimeSlot._12;
     }
-    if (value.equals(TimeSlot._16_20.getValueAsString())) {
-      return TimeSlot._16_20;
+    if (value.equals(TimeSlot._16.getValueAsString())) {
+      return TimeSlot._16;
     }
-    if (value.equals(TimeSlot._20_0.getValueAsString())) {
-      return TimeSlot._20_0;
+    if (value.equals(TimeSlot._20.getValueAsString())) {
+      return TimeSlot._20;
     }
     return TimeSlot.getDefault();
   }

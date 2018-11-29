@@ -4,11 +4,6 @@ package Bixi.constraints;
 
 import jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
-import jetbrains.mps.smodel.runtime.ConstraintFunction;
-import jetbrains.mps.smodel.runtime.ConstraintContext_CanBeChild;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-import jetbrains.mps.smodel.runtime.CheckingNodeContext;
 import java.util.Map;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor;
@@ -22,34 +17,16 @@ import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import jetbrains.mps.internal.collections.runtime.IWhereFilter;
 import java.util.Objects;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
-import org.jetbrains.mps.openapi.language.SAbstractConcept;
-import org.jetbrains.mps.openapi.language.SContainmentLink;
-import jetbrains.mps.smodel.SNodePointer;
 
 public class Member_Constraints extends BaseConstraintsDescriptor {
   public Member_Constraints() {
-    super(MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL, "Bixi.structure.Member"));
+    super(MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696802L, "Bixi.structure.Member"));
   }
 
-  @Override
-  protected ConstraintFunction<ConstraintContext_CanBeChild, Boolean> calculateCanBeChildConstraint() {
-    return new ConstraintFunction<ConstraintContext_CanBeChild, Boolean>() {
-      @NotNull
-      public Boolean invoke(@NotNull ConstraintContext_CanBeChild context, @Nullable CheckingNodeContext checkingNodeContext) {
-        boolean result = staticCanBeAChild(context.getNode(), context.getParentNode(), context.getConcept(), context.getLink());
-
-        if (!(result) && checkingNodeContext != null) {
-          checkingNodeContext.setBreakingNode(canBeChildBreakingPoint);
-        }
-
-        return result;
-      }
-    };
-  }
   @Override
   protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
     Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL, 0x3663fa1ece76bf7dL, "ID"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL, 0x3663fa1ece76bf7dL), this) {
+    properties.put(MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696802L, 0x6be7fb71e2696822L, "ID"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696802L, 0x6be7fb71e2696822L), this) {
       @Override
       public boolean hasOwnValidator() {
         return true;
@@ -57,17 +34,13 @@ public class Member_Constraints extends BaseConstraintsDescriptor {
       @Override
       public boolean validateValue(SNode node, final String propertyValue) {
         String propertyName = "ID";
-        return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, "Bixi.structure.Neighbourhood"), false, false), MetaAdapterFactory.getContainmentLink(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, 0x340c17a2995353a0L, "members"))).where(new IWhereFilter<SNode>() {
+        return ListSequence.fromList(SLinkOperations.getChildren(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696805L, "Bixi.structure.Neighbourhood"), false, false), MetaAdapterFactory.getContainmentLink(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696805L, 0x6be7fb71e2696843L, "members"))).where(new IWhereFilter<SNode>() {
           public boolean accept(SNode it) {
-            return Objects.equals(SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL, 0x3663fa1ece76bf7dL, "ID")), (SPropertyOperations.getInteger(propertyValue)));
+            return Objects.equals(SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696802L, 0x6be7fb71e2696822L, "ID")), (SPropertyOperations.getInteger(propertyValue)));
           }
         }).count() <= 1;
       }
     });
     return properties;
   }
-  private static boolean staticCanBeAChild(SNode node, SNode parentNode, SAbstractConcept childConcept, SContainmentLink link) {
-    return SNodeOperations.isInstanceOf(parentNode, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, "Bixi.structure.Neighbourhood"));
-  }
-  private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:e0e61ae0-23de-4e57-9ddf-43be00c8df9c(Bixi.constraints)", "3750398576813341761");
 }

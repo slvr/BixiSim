@@ -7,38 +7,38 @@ import jetbrains.mps.internal.collections.runtime.ListSequence;
 import java.util.LinkedList;
 
 public enum WeekDay {
-  Monday("Monday", "Monday"),
-  Tuesday("Tuesday", "Tuesday"),
-  Wednesday("Wednesday", "Wednesday"),
-  Thursday("Thursday", "Thursday"),
-  Friday("Friday", "Friday"),
-  Saturday("Saturday", "Saturday"),
-  Sunday("Sunday", "Sunday");
+  _1("Monday", 1),
+  _2("Tuesday", 2),
+  _3("Wednesday", 3),
+  _4("Thursday", 4),
+  _5("Friday", 5),
+  _6("Saturday", 6),
+  _7("Sunday", 7);
 
   private final String myName;
   public String getName() {
     return myName;
   }
-  private final String myValue;
-  private WeekDay(String name, String value) {
+  private final int myValue;
+  WeekDay(String name, int value) {
     myName = name;
     myValue = value;
   }
-  public String getValue() {
+  public int getValue() {
     return myValue;
   }
   public String getValueAsString() {
-    return myValue;
+    return Integer.toString(myValue);
   }
   public static List<WeekDay> getConstants() {
     List<WeekDay> list = ListSequence.fromList(new LinkedList<WeekDay>());
-    ListSequence.fromList(list).addElement(WeekDay.Monday);
-    ListSequence.fromList(list).addElement(WeekDay.Tuesday);
-    ListSequence.fromList(list).addElement(WeekDay.Wednesday);
-    ListSequence.fromList(list).addElement(WeekDay.Thursday);
-    ListSequence.fromList(list).addElement(WeekDay.Friday);
-    ListSequence.fromList(list).addElement(WeekDay.Saturday);
-    ListSequence.fromList(list).addElement(WeekDay.Sunday);
+    ListSequence.fromList(list).addElement(WeekDay._1);
+    ListSequence.fromList(list).addElement(WeekDay._2);
+    ListSequence.fromList(list).addElement(WeekDay._3);
+    ListSequence.fromList(list).addElement(WeekDay._4);
+    ListSequence.fromList(list).addElement(WeekDay._5);
+    ListSequence.fromList(list).addElement(WeekDay._6);
+    ListSequence.fromList(list).addElement(WeekDay._7);
     return list;
   }
   public static WeekDay getDefault() {
@@ -48,26 +48,26 @@ public enum WeekDay {
     if (value == null) {
       return WeekDay.getDefault();
     }
-    if (value.equals(WeekDay.Monday.getValueAsString())) {
-      return WeekDay.Monday;
+    if (value.equals(WeekDay._1.getValueAsString())) {
+      return WeekDay._1;
     }
-    if (value.equals(WeekDay.Tuesday.getValueAsString())) {
-      return WeekDay.Tuesday;
+    if (value.equals(WeekDay._2.getValueAsString())) {
+      return WeekDay._2;
     }
-    if (value.equals(WeekDay.Wednesday.getValueAsString())) {
-      return WeekDay.Wednesday;
+    if (value.equals(WeekDay._3.getValueAsString())) {
+      return WeekDay._3;
     }
-    if (value.equals(WeekDay.Thursday.getValueAsString())) {
-      return WeekDay.Thursday;
+    if (value.equals(WeekDay._4.getValueAsString())) {
+      return WeekDay._4;
     }
-    if (value.equals(WeekDay.Friday.getValueAsString())) {
-      return WeekDay.Friday;
+    if (value.equals(WeekDay._5.getValueAsString())) {
+      return WeekDay._5;
     }
-    if (value.equals(WeekDay.Saturday.getValueAsString())) {
-      return WeekDay.Saturday;
+    if (value.equals(WeekDay._6.getValueAsString())) {
+      return WeekDay._6;
     }
-    if (value.equals(WeekDay.Sunday.getValueAsString())) {
-      return WeekDay.Sunday;
+    if (value.equals(WeekDay._7.getValueAsString())) {
+      return WeekDay._7;
     }
     return WeekDay.getDefault();
   }

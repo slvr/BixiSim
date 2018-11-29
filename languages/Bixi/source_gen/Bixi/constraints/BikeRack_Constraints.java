@@ -37,7 +37,7 @@ import jetbrains.mps.smodel.SNodePointer;
 
 public class BikeRack_Constraints extends BaseConstraintsDescriptor {
   public BikeRack_Constraints() {
-    super(MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, "Bixi.structure.BikeRack"));
+    super(MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, "Bixi.structure.BikeRack"));
   }
 
   @Override
@@ -58,18 +58,18 @@ public class BikeRack_Constraints extends BaseConstraintsDescriptor {
   @Override
   protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
     Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
-    properties.put(MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, 0x32f20c5cdebdfb52L, "numberofBikes"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, 0x32f20c5cdebdfb52L), this) {
+    properties.put(MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, 0x6be7fb71e2696812L, "numberOfBikes"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, 0x6be7fb71e2696812L), this) {
       @Override
       public boolean hasOwnValidator() {
         return true;
       }
       @Override
       public boolean validateValue(SNode node, String propertyValue) {
-        String propertyName = "numberofBikes";
-        return (SPropertyOperations.getInteger(propertyValue)) >= 0 && (SPropertyOperations.getInteger(propertyValue)) <= SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, 0x32f20c5cdebdfb56L, "upperLimit"));
+        String propertyName = "numberOfBikes";
+        return (SPropertyOperations.getInteger(propertyValue)) >= 0 && (SPropertyOperations.getInteger(propertyValue)) <= SPropertyOperations.getInteger(node, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, 0x6be7fb71e2696814L, "upperLimit"));
       }
     });
-    properties.put(MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, 0x32f20c5cdebdfb56L, "upperLimit"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, 0x32f20c5cdebdfb56L), this) {
+    properties.put(MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, 0x6be7fb71e2696814L, "upperLimit"), new BasePropertyConstraintsDescriptor(MetaIdFactory.propId(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, 0x6be7fb71e2696814L), this) {
       @Override
       public boolean hasOwnValidator() {
         return true;
@@ -77,7 +77,7 @@ public class BikeRack_Constraints extends BaseConstraintsDescriptor {
       @Override
       public boolean validateValue(SNode node, String propertyValue) {
         String propertyName = "upperLimit";
-        return (SPropertyOperations.getInteger(propertyValue)) >= 1 && (SPropertyOperations.getInteger(propertyValue)) >= SPropertyOperations.getInteger(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, "Bixi.structure.BikeRack"), true, false), MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, 0x32f20c5cdebdfb52L, "numberofBikes"));
+        return (SPropertyOperations.getInteger(propertyValue)) >= 1 && (SPropertyOperations.getInteger(propertyValue)) >= SPropertyOperations.getInteger(SNodeOperations.getNodeAncestor(node, MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, "Bixi.structure.BikeRack"), true, false), MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, 0x6be7fb71e2696812L, "numberOfBikes"));
       }
     });
     return properties;
@@ -85,7 +85,7 @@ public class BikeRack_Constraints extends BaseConstraintsDescriptor {
   @Override
   protected Map<SReferenceLink, ReferenceConstraintsDescriptor> getSpecifiedReferences() {
     Map<SReferenceLink, ReferenceConstraintsDescriptor> references = new HashMap<SReferenceLink, ReferenceConstraintsDescriptor>();
-    references.put(MetaAdapterFactory.getReferenceLink(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, 0x340c17a299323f48L, "horizontalStreet"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, 0x340c17a299323f48L), this) {
+    references.put(MetaAdapterFactory.getReferenceLink(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, 0x6be7fb71e269681bL, "horizontalStreet"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, 0x6be7fb71e269681bL), this) {
       @Override
       public boolean hasOwnScopeProvider() {
         return true;
@@ -101,24 +101,24 @@ public class BikeRack_Constraints extends BaseConstraintsDescriptor {
           @Override
           public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
             {
-              SNode currentNeighborhood = SNodeOperations.getNodeAncestor(_context.getContextNode(), MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, "Bixi.structure.Neighbourhood"), true, false);
-              SNode currentRack = SNodeOperations.getNodeAncestor(_context.getContextNode(), MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, "Bixi.structure.BikeRack"), true, false);
-              final SNode crossedStreet = SLinkOperations.getTarget(currentRack, MetaAdapterFactory.getReferenceLink(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, 0x340c17a299429e31L, "verticalStreet"));
+              SNode currentNeighbourhood = SNodeOperations.getNodeAncestor(_context.getContextNode(), MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696805L, "Bixi.structure.Neighbourhood"), true, false);
+              SNode currentRack = SNodeOperations.getNodeAncestor(_context.getContextNode(), MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, "Bixi.structure.BikeRack"), true, false);
+              final SNode crossedStreet = SLinkOperations.getTarget(currentRack, MetaAdapterFactory.getReferenceLink(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, 0x6be7fb71e269681dL, "verticalStreet"));
               Iterable<SNode> possibleHStreets;
               if (!((crossedStreet == null))) {
-                possibleHStreets = ListSequence.fromList(SLinkOperations.getChildren(currentNeighborhood, MetaAdapterFactory.getContainmentLink(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, 0x340c17a2994dba57L, "streets"))).where(new IWhereFilter<SNode>() {
+                possibleHStreets = ListSequence.fromList(SLinkOperations.getChildren(currentNeighbourhood, MetaAdapterFactory.getContainmentLink(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696805L, 0x6be7fb71e269683eL, "streets"))).where(new IWhereFilter<SNode>() {
                   public boolean accept(SNode it) {
-                    return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x340c17a299323ce9L, "Bixi.structure.HorizontalStreet"));
+                    return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696801L, "Bixi.structure.HorizontalStreet"));
                   }
                 }).where(new IWhereFilter<SNode>() {
                   public boolean accept(SNode it) {
-                    return SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb29L, "placement")) < SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb1fL, "upperLimit")) && SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb29L, "placement")) > SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdeb11L, "lowerLimit")) && SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb1fL, "upperLimit")) > SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb29L, "placement")) && SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdeb11L, "lowerLimit")) < SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb29L, "placement"));
+                    return SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686dL, "placement")) <= SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686aL, "upperLimit")) && SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686dL, "placement")) >= SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e2696868L, "lowerLimit")) && SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686aL, "upperLimit")) >= SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686dL, "placement")) && SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e2696868L, "lowerLimit")) <= SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686dL, "placement"));
                   }
                 });
               } else {
-                possibleHStreets = ListSequence.fromList(SLinkOperations.getChildren(currentNeighborhood, MetaAdapterFactory.getContainmentLink(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, 0x340c17a2994dba57L, "streets"))).where(new IWhereFilter<SNode>() {
+                possibleHStreets = ListSequence.fromList(SLinkOperations.getChildren(currentNeighbourhood, MetaAdapterFactory.getContainmentLink(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696805L, 0x6be7fb71e269683eL, "streets"))).where(new IWhereFilter<SNode>() {
                   public boolean accept(SNode it) {
-                    return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x340c17a299323ce9L, "Bixi.structure.HorizontalStreet"));
+                    return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696801L, "Bixi.structure.HorizontalStreet"));
                   }
                 });
               }
@@ -128,7 +128,7 @@ public class BikeRack_Constraints extends BaseConstraintsDescriptor {
         };
       }
     });
-    references.put(MetaAdapterFactory.getReferenceLink(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, 0x340c17a299429e31L, "verticalStreet"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, 0x340c17a299429e31L), this) {
+    references.put(MetaAdapterFactory.getReferenceLink(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, 0x6be7fb71e269681dL, "verticalStreet"), new BaseReferenceConstraintsDescriptor(MetaIdFactory.refId(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, 0x6be7fb71e269681dL), this) {
       @Override
       public boolean hasOwnScopeProvider() {
         return true;
@@ -144,24 +144,24 @@ public class BikeRack_Constraints extends BaseConstraintsDescriptor {
           @Override
           public Scope createScope(final IOperationContext operationContext, final ReferenceConstraintsContext _context) {
             {
-              SNode currentNeighborhood = SNodeOperations.getNodeAncestor(_context.getContextNode(), MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, "Bixi.structure.Neighbourhood"), true, false);
-              SNode currentRack = SNodeOperations.getNodeAncestor(_context.getContextNode(), MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, "Bixi.structure.BikeRack"), true, false);
-              final SNode crossedStreet = SLinkOperations.getTarget(currentRack, MetaAdapterFactory.getReferenceLink(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L, 0x340c17a299323f48L, "horizontalStreet"));
+              SNode currNeighbourhood = SNodeOperations.getNodeAncestor(_context.getContextNode(), MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696805L, "Bixi.structure.Neighbourhood"), true, false);
+              SNode currentRack = SNodeOperations.getNodeAncestor(_context.getContextNode(), MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, "Bixi.structure.BikeRack"), true, false);
+              final SNode crossedStreet = SLinkOperations.getTarget(currentRack, MetaAdapterFactory.getReferenceLink(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L, 0x6be7fb71e269681bL, "horizontalStreet"));
               Iterable<SNode> possibleVStreets;
               if (!((crossedStreet == null))) {
-                possibleVStreets = ListSequence.fromList(SLinkOperations.getChildren(currentNeighborhood, MetaAdapterFactory.getContainmentLink(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, 0x340c17a2994dba57L, "streets"))).where(new IWhereFilter<SNode>() {
+                possibleVStreets = ListSequence.fromList(SLinkOperations.getChildren(currNeighbourhood, MetaAdapterFactory.getContainmentLink(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696805L, 0x6be7fb71e269683eL, "streets"))).where(new IWhereFilter<SNode>() {
                   public boolean accept(SNode it) {
-                    return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x340c17a299323ce8L, "Bixi.structure.VerticalStreet"));
+                    return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680bL, "Bixi.structure.VerticalStreet"));
                   }
                 }).where(new IWhereFilter<SNode>() {
                   public boolean accept(SNode it) {
-                    return SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb29L, "placement")) < SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb1fL, "upperLimit")) && SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb29L, "placement")) > SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdeb11L, "lowerLimit")) && SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb1fL, "upperLimit")) > SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb29L, "placement")) && SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdeb11L, "lowerLimit")) < SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL, 0x32f20c5cdebdfb29L, "placement"));
+                    return SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686dL, "placement")) <= SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686aL, "upperLimit")) && SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686dL, "placement")) >= SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e2696868L, "lowerLimit")) && SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686aL, "upperLimit")) >= SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686dL, "placement")) && SPropertyOperations.getInteger(it, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e2696868L, "lowerLimit")) <= SPropertyOperations.getInteger(crossedStreet, MetaAdapterFactory.getProperty(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL, 0x6be7fb71e269686dL, "placement"));
                   }
                 });
               } else {
-                possibleVStreets = ListSequence.fromList(SLinkOperations.getChildren(currentNeighborhood, MetaAdapterFactory.getContainmentLink(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, 0x340c17a2994dba57L, "streets"))).where(new IWhereFilter<SNode>() {
+                possibleVStreets = ListSequence.fromList(SLinkOperations.getChildren(currNeighbourhood, MetaAdapterFactory.getContainmentLink(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696805L, 0x6be7fb71e269683eL, "streets"))).where(new IWhereFilter<SNode>() {
                   public boolean accept(SNode it) {
-                    return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x340c17a299323ce8L, "Bixi.structure.VerticalStreet"));
+                    return SNodeOperations.isInstanceOf(it, MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680bL, "Bixi.structure.VerticalStreet"));
                   }
                 });
               }
@@ -174,9 +174,9 @@ public class BikeRack_Constraints extends BaseConstraintsDescriptor {
     return references;
   }
   private static boolean staticCanBeAChild(SNode node, SNode parentNode, SAbstractConcept childConcept, SContainmentLink link) {
-    return SNodeOperations.isInstanceOf(parentNode, MetaAdapterFactory.getConcept(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L, "Bixi.structure.Neighbourhood"));
+    return SNodeOperations.isInstanceOf(parentNode, MetaAdapterFactory.getConcept(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696805L, "Bixi.structure.Neighbourhood"));
   }
-  private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:e0e61ae0-23de-4e57-9ddf-43be00c8df9c(Bixi.constraints)", "3750398576812685112");
-  private static SNodePointer breakingNode_9dfn1j_a0a0a0a0a1a0b0a1a4 = new SNodePointer("r:e0e61ae0-23de-4e57-9ddf-43be00c8df9c(Bixi.constraints)", "3750398576815130107");
-  private static SNodePointer breakingNode_9dfn1j_a0a0a0a0a1a0b0a2a4 = new SNodePointer("r:e0e61ae0-23de-4e57-9ddf-43be00c8df9c(Bixi.constraints)", "3750398576816735354");
+  private static SNodePointer canBeChildBreakingPoint = new SNodePointer("r:523c7c62-7bf2-439d-8b6f-b8ba789d797b(Bixi.constraints)", "7775459748226885900");
+  private static SNodePointer breakingNode_9dfn1j_a0a0a0a0a1a0b0a1a4 = new SNodePointer("r:523c7c62-7bf2-439d-8b6f-b8ba789d797b(Bixi.constraints)", "7775459748226959957");
+  private static SNodePointer breakingNode_9dfn1j_a0a0a0a0a1a0b0a2a4 = new SNodePointer("r:523c7c62-7bf2-439d-8b6f-b8ba789d797b(Bixi.constraints)", "7775459748227150120");
 }

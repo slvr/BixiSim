@@ -67,101 +67,101 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   }
 
   private static ConceptDescriptor createDescriptorForBikeRack() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "BikeRack", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "BikeRack", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L);
     b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3671010239273892689");
+    b.origin("r:68253c69-86bf-466a-ad09-51c632045283(Bixi.structure)/7775459748226885632");
     b.version(2);
-    b.prop("numberofBikes", 0x32f20c5cdebdfb52L, "3671010239273892690");
-    b.prop("upperLimit", 0x32f20c5cdebdfb56L, "3671010239273892694");
-    b.prop("quadrant", 0x32f20c5cdebdfb5dL, "3671010239273892701");
-    b.associate("horizontalStreet", 0x340c17a299323f48L).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x340c17a299323ce9L).optional(false).origin("3750398576815128392").done();
-    b.associate("verticalStreet", 0x340c17a299429e31L).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x340c17a299323ce8L).optional(false).origin("3750398576816201265").done();
+    b.prop("numberOfBikes", 0x6be7fb71e2696812L, "7775459748226885650");
+    b.prop("upperLimit", 0x6be7fb71e2696814L, "7775459748226885652");
+    b.prop("quadrant", 0x6be7fb71e2696817L, "7775459748226885655");
+    b.associate("horizontalStreet", 0x6be7fb71e269681bL).target(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696801L).optional(false).origin("7775459748226885659").done();
+    b.associate("verticalStreet", 0x6be7fb71e269681dL).target(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680bL).optional(false).origin("7775459748226885661").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForHorizontalStreet() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "HorizontalStreet", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x340c17a299323ce9L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "HorizontalStreet", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696801L);
     b.class_(false, false, false);
-    b.super_("Bixi.structure.Street", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL);
-    b.origin("r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3750398576815127785");
+    b.super_("Bixi.structure.Street", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL);
+    b.origin("r:68253c69-86bf-466a-ad09-51c632045283(Bixi.structure)/7775459748226885633");
     b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMember() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "Member", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "Member", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696802L);
     b.class_(false, false, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962314396");
+    b.origin("r:68253c69-86bf-466a-ad09-51c632045283(Bixi.structure)/7775459748226885634");
     b.version(2);
-    b.prop("ID", 0x3663fa1ece76bf7dL, "3919251110962315133");
+    b.prop("ID", 0x6be7fb71e2696822L, "7775459748226885666");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMemberMovement() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "MemberMovement", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bca1L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "MemberMovement", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696803L);
     b.class_(false, false, false);
-    b.super_("Bixi.structure.Movement", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bf33L);
-    b.origin("r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962314401");
+    b.super_("Bixi.structure.Movement", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696804L);
+    b.origin("r:68253c69-86bf-466a-ad09-51c632045283(Bixi.structure)/7775459748226885635");
     b.version(2);
-    b.associate("member", 0x3663fa1ece76bf19L).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL).optional(false).origin("3919251110962315033").done();
+    b.associate("member", 0x6be7fb71e2696824L).target(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696802L).optional(false).origin("7775459748226885668").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForMovement() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "Movement", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bf33L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "Movement", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696804L);
     b.class_(false, true, false);
-    b.origin("r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962315059");
+    b.origin("r:68253c69-86bf-466a-ad09-51c632045283(Bixi.structure)/7775459748226885636");
     b.version(2);
-    b.prop("dayOfWeek", 0x3663fa1ece76bf4dL, "3919251110962315085");
-    b.prop("timeSlot", 0x3663fa1ece76bf50L, "3919251110962315088");
-    b.prop("numberOfBikes", 0x3663fa1ece76bf55L, "3919251110962315093");
-    b.associate("sourceRack", 0x3663fa1ece76bf5cL).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L).optional(false).origin("3919251110962315100").done();
-    b.associate("targetRack", 0x3663fa1ece76bf5fL).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L).optional(false).origin("3919251110962315103").done();
+    b.prop("dayOfWeek", 0x6be7fb71e2696826L, "7775459748226885670");
+    b.prop("timeslot", 0x6be7fb71e2696828L, "7775459748226885672");
+    b.prop("numberOfBikes", 0x6be7fb71e269682bL, "7775459748226885675");
+    b.associate("sourceRack", 0x6be7fb71e269682fL).target(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L).optional(false).origin("7775459748226885679").done();
+    b.associate("targetRack", 0x6be7fb71e2696831L).target(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L).optional(false).origin("7775459748226885681").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForNeighbourhood() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "Neighbourhood", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdea86L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "Neighbourhood", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696805L);
     b.class_(false, false, true);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
     b.parent(0x4caf0310491e41f5L, 0x8a9b2006b3a94898L, 0x40c1a7cb987d20d5L);
-    b.origin("r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3671010239273888390");
+    b.origin("r:68253c69-86bf-466a-ad09-51c632045283(Bixi.structure)/7775459748226885637");
     b.version(2);
-    b.aggregate("streets", 0x340c17a2994dba57L).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL).optional(true).ordered(true).multiple(true).origin("3750398576816929367").done();
-    b.aggregate("racks", 0x340c17a29936b255L).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdfb51L).optional(true).ordered(true).multiple(true).origin("3750398576815419989").done();
-    b.aggregate("members", 0x340c17a2995353a0L).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bc9cL).optional(true).ordered(true).multiple(true).origin("3750398576817296288").done();
-    b.aggregate("mouvement", 0x340c17a2994561fdL).target(0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bf33L).optional(true).ordered(true).multiple(true).origin("3750398576816382461").done();
+    b.aggregate("streets", 0x6be7fb71e269683eL).target(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL).optional(true).ordered(true).multiple(true).origin("7775459748226885694").done();
+    b.aggregate("racks", 0x6be7fb71e2696840L).target(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696800L).optional(true).ordered(true).multiple(true).origin("7775459748226885696").done();
+    b.aggregate("members", 0x6be7fb71e2696843L).target(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696802L).optional(true).ordered(true).multiple(true).origin("7775459748226885699").done();
+    b.aggregate("movement", 0x6be7fb71e2696847L).target(0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696804L).optional(true).ordered(true).multiple(true).origin("7775459748226885703").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRandomMovement() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "RandomMovement", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bbd1L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "RandomMovement", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696808L);
     b.class_(false, false, false);
-    b.super_("Bixi.structure.Movement", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bf33L);
-    b.origin("r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962314193");
+    b.super_("Bixi.structure.Movement", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696804L);
+    b.origin("r:68253c69-86bf-466a-ad09-51c632045283(Bixi.structure)/7775459748226885640");
     b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForRedistribution() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "Redistribution", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bbd2L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "Redistribution", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696809L);
     b.class_(false, false, false);
-    b.super_("Bixi.structure.Movement", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x3663fa1ece76bf33L);
-    b.origin("r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3919251110962314194");
+    b.super_("Bixi.structure.Movement", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e2696804L);
+    b.origin("r:68253c69-86bf-466a-ad09-51c632045283(Bixi.structure)/7775459748226885641");
     b.version(2);
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForStreet() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "Street", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "Street", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL);
     b.class_(false, true, false);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L);
-    b.origin("r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3671010239273888507");
+    b.origin("r:68253c69-86bf-466a-ad09-51c632045283(Bixi.structure)/7775459748226885642");
     b.version(2);
-    b.prop("lowerLimit", 0x32f20c5cdebdeb11L, "3671010239273888529");
-    b.prop("upperLimit", 0x32f20c5cdebdfb1fL, "3671010239273892639");
-    b.prop("placement", 0x32f20c5cdebdfb29L, "3671010239273892649");
+    b.prop("lowerLimit", 0x6be7fb71e2696868L, "7775459748226885736");
+    b.prop("upperLimit", 0x6be7fb71e269686aL, "7775459748226885738");
+    b.prop("placement", 0x6be7fb71e269686dL, "7775459748226885741");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForVerticalStreet() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "VerticalStreet", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x340c17a299323ce8L);
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Bixi", "VerticalStreet", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680bL);
     b.class_(false, false, false);
-    b.super_("Bixi.structure.Street", 0x80abab196e2b414aL, 0xbf443232f0a94d40L, 0x32f20c5cdebdeafbL);
-    b.origin("r:8b2e5c5f-7efd-491c-ac51-f5a2c54cbab0(Bixi.structure)/3750398576815127784");
+    b.super_("Bixi.structure.Street", 0xbf0cd3e1a3fa4f85L, 0xbf1d1f19f9461b19L, 0x6be7fb71e269680aL);
+    b.origin("r:68253c69-86bf-466a-ad09-51c632045283(Bixi.structure)/7775459748226885643");
     b.version(2);
     return b.create();
   }
